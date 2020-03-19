@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Francesc H.</title>
+    <link>/</link>
+    <description>Recent content on Francesc H.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Aug 2019 17:47:58 +0200</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>València y las bicicletas de alquiler</title>
+      <link>/valenbisi/</link>
+      <pubDate>Thu, 22 Aug 2019 17:47:58 +0200</pubDate>
+      
+      <guid>/valenbisi/</guid>
+      <description>JCDecaux: contexto general La empresa JCDecaux es una gigante multinacional conocida principalmente por sus servicios de publicidad exterior, principalmente en entornos urbanos1. Se encuentra presente en más de 80 paises y 4030 ciudades. Según los datos que proporciona la empresa, en 2018 obtuvieron unos beneficios de 3619 millones de euros2.
+Una faceta menos conocida de la corporación francesa es la gestión de sistemas de alquiler temporal de bicicletas. El funcionamiento de estos sistemas se basa en la instalación de estaciones donde los usuarios pueden encontrar bicicletas a su disposición.</description>
+    </item>
+    
+  </channel>
+</rss>

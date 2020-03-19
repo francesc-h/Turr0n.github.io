@@ -1,0 +1,20 @@
+body {
+    font-size: 1.2rem;
+}
+
+.footnote a {
+    text-decoration: none;
+    color: #fe5186
+}
+
+.post-content p {
+    text-align: justify;
+}
+
+.post-content ul {
+    text-align: justify;
+}
+
+.footnotes ul {
+    list-style: none;
+}

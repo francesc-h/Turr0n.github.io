@@ -1,0 +1,205 @@
+[
+  {
+    "city": "Amiens",
+    "country": "France",
+    "stations": 26,
+    "bikes": 313,
+    "pop": 132874
+  },
+  {
+    "city": "Besançon",
+    "country": "France",
+    "stations": 30,
+    "bikes": 200,
+    "pop": 116676
+  },
+  {
+    "city": "Brussels",
+    "country": "Belgium",
+    "stations": 180,
+    "bikes": 2500,
+    "pop": 174383
+  },
+  {
+    "city": "Brisbane",
+    "country": "Australia",
+    "stations": 150,
+    "bikes": 2000,
+    "pop": 2274560
+  },
+  {
+    "city": "Cergy-Pontoise",
+    "country": "France",
+    "stations": 41,
+    "bikes": 360,
+    "pop": 63395
+  },
+  {
+    "city": "Créteil",
+    "country": "France",
+    "stations": 10,
+    "bikes": 130,
+    "pop": 90739
+  },
+  {
+    "city": "Cordoba",
+    "country": "Spain",
+    "stations": 4,
+    "bikes": 35,
+    "pop": 325916
+  },
+  {
+    "city": "Dublin",
+    "country": "Irland",
+    "stations": 40,
+    "bikes": 450,
+    "pop": 544107
+  },
+  {
+    "city": "Gijón",
+    "country": "Spain",
+    "stations": 8,
+    "bikes": 64,
+    "pop": 271843
+  },
+  {
+    "city": "Göteborg",
+    "country": "Sweden",
+    "stations": 40,
+    "bikes": 600,
+    "pop": 599011
+  },
+  {
+    "city": "Kazan",
+    "country": "Russia",
+    "stations": 12,
+    "bikes": 260,
+    "pop": 1243500
+  },
+  {
+    "city": "Lillestrøm",
+    "country": "Norway",
+    "stations": 5,
+    "bikes": 50,
+    "pop": 14000
+  },
+  {
+    "city": "Ljubljana",
+    "country": "Slovenia",
+    "stations": 30,
+    "bikes": 300,
+    "pop": 279631
+  },
+  {
+    "city": "Luxembourg",
+    "country": "Luxembourg",
+    "stations": 32,
+    "bikes": 250,
+    "pop": 590667
+  },
+  {
+    "city": "Lyon",
+    "country": "France",
+    "stations": 348,
+    "bikes": 4000,
+    "pop": 513275
+  },
+  {
+    "city": "Marseille",
+    "country": "France",
+    "stations": 130,
+    "bikes": 1000,
+    "pop": 861635
+  },
+  {
+    "city": "Mulhouse",
+    "country": "France",
+    "stations": 40,
+    "bikes": 240,
+    "pop": 110370
+  },
+  {
+    "city": "Namur",
+    "country": "Belgium",
+    "stations": 24,
+    "bikes": 240,
+    "pop": 110175
+  },
+  {
+    "city": "Nancy",
+    "country": "France",
+    "stations": 29,
+    "bikes": 250,
+    "pop": 105162
+  },
+  {
+    "city": "Nantes",
+    "country": "France",
+    "stations": 102,
+    "bikes": 880,
+    "pop": 303382
+  },
+  {
+    "city": "Paris",
+    "country": "France",
+    "stations": 1751,
+    "bikes": 23900,
+    "pop": 2206488
+  },
+  {
+    "city": "Rouen",
+    "country": "France",
+    "stations": 22,
+    "bikes": 250,
+    "pop": 110169
+  },
+  {
+    "city": "Santander",
+    "country": "Spain",
+    "stations": 15,
+    "bikes": 200,
+    "pop": 172044
+  },
+  {
+    "city": "Seville",
+    "country": "Spain",
+    "stations": 250,
+    "bikes": 2500,
+    "pop": 690000
+  },
+  {
+    "city": "Toulouse",
+    "country": "France",
+    "stations": 253,
+    "bikes": 2400,
+    "pop": 471941
+  },
+  {
+    "city": "Toyama",
+    "country": "Japan",
+    "stations": 15,
+    "bikes": 150,
+    "pop": 418686
+  },
+  {
+    "city": "Valencia",
+    "country": "Spain",
+    "stations": 275,
+    "bikes": 2750,
+    "pop": 789004
+  },
+  {
+    "city": "Vienna",
+    "country": "Austria",
+    "stations": 60,
+    "bikes": 1000,
+    "pop": 1840573
+  },
+  {
+    "city": "Vilnius",
+    "country": "Lituanie",
+    "stations": 24,
+    "bikes": 200,
+    "pop": 544386
+  }
+]
