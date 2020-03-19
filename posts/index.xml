@@ -6,19 +6,18 @@
     <description>Recent content in Posts on Francesc H.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Aug 2019 17:47:58 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jan 2020 19:41:15 +0100</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>València y las bicicletas de alquiler</title>
-      <link>/valenbisi/</link>
-      <pubDate>Thu, 22 Aug 2019 17:47:58 +0200</pubDate>
+      <title>Airbnb: impacto en València</title>
+      <link>/airbnb/</link>
+      <pubDate>Sun, 19 Jan 2020 19:41:15 +0100</pubDate>
       
-      <guid>/valenbisi/</guid>
-      <description>JCDecaux: contexto general La empresa JCDecaux es una gigante multinacional conocida principalmente por sus servicios de publicidad exterior, principalmente en entornos urbanos1. Se encuentra presente en más de 80 paises y 4030 ciudades. Según los datos que proporciona la empresa, en 2018 obtuvieron unos beneficios de 3619 millones de euros2.
-Una faceta menos conocida de la corporación francesa es la gestión de sistemas de alquiler temporal de bicicletas. El funcionamiento de estos sistemas se basa en la instalación de estaciones donde los usuarios pueden encontrar bicicletas a su disposición.</description>
+      <guid>/airbnb/</guid>
+      <description>¿Qué es Airbnb? Airbnb es una empresa que provee una plataforma online para anunciar alojamientos turísticos normalmente de corta estancia. Nació en noviembre de 2008 en la ciudad de San Francisco, después de menos de tres años la empresa anunció, en febrero de 2011, que se habían realizado un millón de reservas hasta la fecha. Once meses después, en enero de 2012, se alcanzó la cifra de 5 millones; durante el transcurso de ese mismo año se duplicaron las reservas y en junio se situaban en 10 millones1.</description>
     </item>
     
   </channel>
