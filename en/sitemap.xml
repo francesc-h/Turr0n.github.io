@@ -3,32 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/airbnb/</loc>
-    <lastmod>2020-01-19T19:41:15+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2020-01-19T19:41:15+01:00</lastmod>
+    <loc>/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
-                href="/es/"
+                hreflang="cat"
+                href="/cat/categories/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/"
-                />
-  </url>
-  
-  <url>
-    <loc>/posts/</loc>
-    <lastmod>2020-01-19T19:41:15+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -37,12 +17,36 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/categories/"
+                href="/en/categories/"
                 />
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>/en/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="cat"
+                href="/cat/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="cat"
+                href="/cat/tags/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -51,7 +55,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/"
+                href="/en/tags/"
                 />
   </url>
   

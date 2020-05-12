@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  
+  <title>Corrigiendo datos: manzanas catastrales de València ::
+    Francesc H. — Blog personal</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="El ayuntamiento de València ofrece, mediante el Portal de Transparència i Dades Obertes, un conjunto de datasets bastante interesante bajo licencia Creative Commons de Reconocimiento 4.0 Internacional (CC BY 4.0).
+Uno de estos dataset que utilizo habitualmente es el de Manzanas catastrales con datos de población. La plataforma permite, en algunos casos, la previsualización de los datos y la descarga en varios formatos. Principalmente empleo herramientas de cartografía web como pueden ser mapbox-gl-js o turf."/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/es/posts/fixing_blocks/fixing_blocks/" />
+
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/img/favicon.png">
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Corrigiendo datos: manzanas catastrales de València"/>
+<meta name="twitter:description" content="El ayuntamiento de València ofrece, mediante el Portal de Transparència i Dades Obertes, un conjunto de datasets bastante interesante bajo licencia Creative Commons de Reconocimiento 4.0 Internacional (CC BY 4.0).
+Uno de estos dataset que utilizo habitualmente es el de Manzanas catastrales con datos de población. La plataforma permite, en algunos casos, la previsualización de los datos y la descarga en varios formatos. Principalmente empleo herramientas de cartografía web como pueden ser mapbox-gl-js o turf."/>
+
+
+
+<meta property="og:title" content="Corrigiendo datos: manzanas catastrales de València" />
+<meta property="og:description" content="El ayuntamiento de València ofrece, mediante el Portal de Transparència i Dades Obertes, un conjunto de datasets bastante interesante bajo licencia Creative Commons de Reconocimiento 4.0 Internacional (CC BY 4.0).
+Uno de estos dataset que utilizo habitualmente es el de Manzanas catastrales con datos de población. La plataforma permite, en algunos casos, la previsualización de los datos y la descarga en varios formatos. Principalmente empleo herramientas de cartografía web como pueden ser mapbox-gl-js o turf." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/es/posts/fixing_blocks/fixing_blocks/" />
+<meta property="article:published_time" content="2020-05-06T16:54:12+02:00" />
+<meta property="article:modified_time" content="2020-05-06T16:54:12+02:00" /><meta property="og:site_name" content="Francesc H." />
+
+
+
+
+
+
+
+  
+  
+  <link rel="stylesheet" href="/css/fixing_blocks.css">
+  </link>
+  
+  
+
+  
+</head>
+
+<body class="">
+  <div class="container">
+    <header class="header">
+  <span class="header__inner">
+    <a href="/" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367"/>
+</svg>
+</span>
+    <span class="logo__text">Francesc H.</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/">Blog</a></li>
+        
+      
+        
+          <li><a href="/about">Sobre mi</a></li>
+        
+      
+      
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/">Blog</a></li>
+      
+    
+      
+        <li><a href="/about">Sobre mi</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+
+      </span>
+      <ul class="menu__sub-inner" style="margin: 0px 5px;">
+        <li class="menu__sub-inner-more-trigger">
+          ES
+          <span class="menu__sub-inner-more-trigger-icon"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367"/>
+</svg>
+</span>
+        </li>
+
+        
+          <ul class="menu__sub-inner-more hidden">
+            
+              
+              
+                <li><a href="/cat/">CAT</a></li>
+              
+            
+              
+              
+                <li><a href="/en/">EN</a></li>
+              
+            
+              
+              
+            
+          </ul>
+      </ul>
+    </span>
+  </span>
+</header>
+
+
+    <div class="content">
+      
+<div class="post">
+  <h2 class="post-title"><a href="/es/posts/fixing_blocks/fixing_blocks/">Corrigiendo datos: manzanas catastrales de València</a></h2>
+  <div class="post-meta">
+    
+    <span class="post-date">
+      2020-05-06
+    </span>
+    
+    
+    
+  </div>
+
+  
+
+  
+
+  <div class="post-content">
+    
+
+<p>El ayuntamiento de València ofrece, mediante el <a href="http://gobiernoabierto.valencia.es/va/data/" target="_blank" rel="noopener noreferrer">Portal de Transparència i Dades Obertes</a>, un conjunto de datasets bastante interesante bajo licencia Creative Commons de Reconocimiento 4.0 Internacional (CC BY 4.0).</p>
+
+<p>Uno de estos dataset que utilizo habitualmente es el de <a href="http://gobiernoabierto.valencia.es/es/dataset/?id=manzanas-catastrales-con-datos-poblacion" target="_blank" rel="noopener noreferrer"><em>Manzanas catastrales con datos de población</em></a>. La plataforma permite, en algunos casos, la previsualización de los datos y la descarga en varios formatos. Principalmente empleo herramientas de cartografía web como pueden ser <code>mapbox-gl-js</code> o <code>turf.js</code>, por lo que descargué el dataset en formato <code>GEOJSON</code>.</p>
+
+<p>El dataset consiste en un solo archivo que contiene una <code>FeatureCollection</code> con 4916 elementos. En principio cada una de estas <code>Features</code> representa una manzana catastral y se proporciona tanto la cantidad total de habitantes como la población en tres horquillas de edad: 0 a 14 años, 15 a 65 y de 66 en adelante.</p>
+
+<p>De manera general el dataset presenta datos válidos y acordes a la especifiación de <code>GEOJSON</code>, podemos observar un ejemplo a continuación:
+
+  <figure class="left" >
+    <img src="/img/fixing_blocks/general_view.png"   />
+    
+  </figure>
+
+</p>
+
+<p>Sin embargo, en algún punto del procesado y publicación de los datos se ha debido cometer algún error ya que aquellas manzanas las cuales están formadas por más de un polígono en lugar de ser definidas como <code>MultiPolygon</code> simplemente han sido definidas como <code>Polygons</code> con los <code>Outer rings</code> de los diferentes polígonos como <code>Inner Rings</code> de un solo polígono y por lo tanto al renderizarlos se producen los siguientes resultados erróneos:</p>
+
+<div class="error_images">
+    <img src="/img/fixing_blocks/error_0.png"  alt="Ejemplo de manzana donde solamente uno de los polígonos que la forman es renderizado de manera correcta.">
+    <img src="/img/fixing_blocks/error_1.png"  alt="Ejemplo de manzana donde solamente uno de los polígonos que la forman es renderizado de manera correcta.">
+    <img src="/img/fixing_blocks/error_2.png"  alt="Ejemplo de manzana donde solamente uno de los polígonos que la forman es renderizado de manera correcta.">
+    <img src="/img/fixing_blocks/error_4.png"  alt="Ejemplo de manzana donde solamente uno de los polígonos que la forman es renderizado de manera correcta.">
+    <img src="/img/fixing_blocks/error_5.png"  alt="Ejemplo de manzana donde solamente uno de los polígonos que la forman es renderizado de manera correcta.">
+    <img src="/img/fixing_blocks/error_12.png" alt="Ejemplo de manzana donde solamente uno de los polígonos que la forman es renderizado de manera correcta.">
+    <h6>Cada imagen muestra una de las manzanas <i>conflictivas</i>, tanto los polígonos como los puntos que los definen, con mayor nivel de opacidad. Podemos ver claramente como hay zonas sin renderizar correctamente.</h6>
+</div>
+
+<h1 id="algoritmo-de-corrección">Algoritmo de corrección</h1>
+
+<p>Pera a solucionar esta problemática he diseñado el siguiente algoritmo en <code>Javascript</code> utilizando <code>turf.js</code>.</p>
+
+<div class="expl_container">
+    <div class="row">
+        <span class="num">1.</span>
+        <pre>
+<code class="language-js">const blocks = await readFile("dataset.geojson").then(data => JSON.parse(data));
+const multi = [], final = turf.featureCollection([]);
+
+for (let block of blocks.features) {
+    if (block.geometry.coordinates.length > 1) multi.push(block)
+    else final.features.push(block);
+}</code></pre>
+        <p class="text">Cargamos el dataset, creamos una nueva <code>FeatureCollection</code> donde almacenaremos el resultado final y una variable auxiliar para separar, mediante el bucle, las <code>Features</code> con más de un array de coordenadas, el resto son correctas y las podemos añadir directamente a <code>final</code>.</p>
+    </div>
+    <!-- #################################################################### -->
+
+    <p style="margin: 30px 0px;">Los siguientes pasos se aplican a todas las manzanas definidas para más de un polígono, es decir, para todos los objetos de <code>multi</code> mediante un bucle.</p>
+
+    <div class="row">
+        <span class="num">2.</span>
+        <pre>
+<code class="language-js">let new_multi = turf.multiPolygon([]), rings_to_append = [];
+
+const pols = block.geometry.coordinates.map(coords => turf.polygon([coords]));
+const [biggest, biggestIndex] = getMax(pols);
+
+pols.splice( biggestIndex, 1 );</code></pre>
+        <div class="text">
+            <p style="margin: 0;">Declaramos todas las variables que utilizaremos para cada manzana:</p>
+            <ul style="margin-top: 0px;">
+                <li><code>new_multi</code>: resultado de modificar la manzana.</li>
+                <li><code>rings_to_append</code>: arrays de coordenadas sobrantes de la <code>Feature</code> original.</li>
+                <li><code>pols</code>: todos los <i>rings</i>, tanto supuestamente interiores como exteriores, son convertidos a polígonos.</li>
+            </ul>
+            <p style="margin-bottom: 0px;">
+                La función auxiliar <code>getMax</code>, dado un array de polígonos, devuelve el polígono de mayor área y su índice dentro del array. Retiramos el polígono más grande del array y nos quedamos con el resto.
+            </p>
+        </div>
+    </div>
+    <!-- #################################################################### -->
+    <div class="row" style="margin-top: 30px;">
+        <span class="num">3.</span>
+        <pre>
+<code class="language-js">for (let pol of pols) {
+    if (turf.booleanContains(biggest, pol)) rings_to_append.push(pol);
+    else new_multi.geometry.coordinates.push(pol.geometry.coordinates);
+}</code></pre>
+        <p class="text">Comprobamos, para cada uno de los <i>rings</i> previamente transformados a polígonos si están contenidos dentro del polígono más grande. Si efectivamente lo está, lo añadiremos posteriormente como un <i>inner ring</i>. En cambio, si el <i>ring</i> no se encuentra contenido, eso quiere decir que se trata de un polígono independiente al principal y por tanto se añadirá a <code>new_multi</code>.
+        </p>
+    </div>
+    <!-- #################################################################### -->
+    <div class="row" style="margin-top: 30px;">
+        <span class="num">4.</span>
+        <pre>
+<code class="language-js">for (let ring of rings_to_append) {
+    biggest.geometry.coordinates.push(ring.geometry.coordinates[0]);
+}</code></pre>
+        <p class="text">Todos los <i>rings</i> que se han comprobado que son interiores son añadidos al principal.</p>
+    </div>
+    <!-- #################################################################### -->
+    <div class="row" style="margin-top: 30px;">
+        <span class="num">5.</span>
+        <pre>
+<code class="language-js">if (new_multi.geometry.coordinates.length != 0) {
+    new_multi.geometry.coordinates.push(biggest.geometry.coordinates)
+} else {
+    new_multi = biggest
+}</code></pre>
+        <p class="text">Si <code>new_multi</code> contiene algún <i>ring</i>, nos encontramos con una manzana formada por diversos polígonos, por tanto, solamente queda añadir el más grande. En cambio, si no hemos añadido nada, nos encontramos con una manzana de un solo polígono pero multiples <i>inner rings</i>.</p>
+    </div>
+    <!-- #################################################################### -->
+    <div class="row" style="margin-top: 30px;">
+        <span class="num">6.</span>
+        <pre>
+<code class="language-js">new_multi.properties = block.properties
+final.features.push(new_multi);</code></pre>
+        <p class="text">Finalmente copiamos el objeto <code>properties</code> del original para no perder los datos de población y lo añadimos a la nueva colección.</p>
+    </div>
+    <!-- #################################################################### -->
+</div>
+
+<h1 id="resultados">Resultados</h1>
+
+<div class="error_images">
+    <img src="/img/fixing_blocks/correct_0.png"  alt="Ejemplo de una manzana corregida con sus multiples poligonso correctamente visibles.">
+    <img src="/img/fixing_blocks/correct_1.png"  alt="Ejemplo de una manzana corregida con sus multiples poligonso correctamente visibles.">
+    <img src="/img/fixing_blocks/correct_2.png"  alt="Ejemplo de una manzana corregida con sus multiples poligonso correctamente visibles.">
+    <img src="/img/fixing_blocks/correct_4.png"  alt="Ejemplo de una manzana corregida con sus multiples poligonso correctamente visibles.">
+    <img src="/img/fixing_blocks/correct_5.png"  alt="Ejemplo de una manzana corregida con sus multiples poligonso correctamente visibles.">
+    <img src="/img/fixing_blocks/correct_12.png" alt="Ejemplo de una manzana corregida con sus multiples poligonso correctamente visibles.">
+    <h6>Una vez ejecutado el algoritmo obtenemos las manzanas correctamente definidas.</h6>
+</div>
+
+<h1 id="limitaciones">Limitaciones</h1>
+
+<p>Por el momento el algoritmo presenta ciertas limitaciones. Imaginemos por ejemplo una manzana formada por dos edificios, es decir, dos polígonos diferentes y además cada uno de ellos tiene un <i>inner ring</i>. En esta situación se corregiría correctamente solamente uno de ellos, el más grande, el segundo se crearía sin su <i>inner ring</i>, que seria añadido como un tercer polígono independiente, ya que no se comprobaría si está contenido dentro del segundo sino del primero.</p>
+
+<p>Tratando este dataset en particular esta limitación, a mi parecer, no tiene mucha importancia ya que solamente una manzana contiene un <i>inner ring</i> en un polígono no principal. Esta manzana es <code>refman: 55990</code> y debido a esta corrección errónea existe una desviación de 6m<sup>2</sup> en el area total de la manzana. Creo que es una desviacion aceptable.</p>
+
+<p>En otros datasets este planteamiento podría no ser lo suficientemente precios y sea necesaria una revisión del algoritmo.</p>
+
+<hr />
+
+<div class="footnotes">
+    <h3>Referencias</h3>
+    <ul>
+        <li id="1">1. <a href="https://tools.ietf.org/html/rfc7946" target="_blank" rel="noopener noreferrer">IETF: <i>The GeoJSON format<i>.</a></li>
+        <li id="2">2. <a href="https://docs.mapbox.com/mapbox-gl-js/overview/" target="_blank" rel="noopener noreferrer">Mapbox-gl.js</a></li>
+        <li id="3">1. <a href="http://turfjs.org/" target="_blank" rel="noopener noreferrer">Turf.js</a></li>
+    </ul>
+</div>
+
+  </div>
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span class="pagination__title-h">Leer otras entradas</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      
+      <span class="button next">
+        <a href="/airbnb/">
+          <span class="button__text">Airbnb: impacto en València</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+  
+
+  
+
+</div>
+
+    </div>
+
+    
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <a href="/" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367"/>
+</svg>
+</span>
+    <span class="logo__text">Francesc H.</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span>
+        <span>Theme created by <a href="https://twitter.com/panr" target="_blank" rel="noopener">panr</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+    
+  </div>
+
+  
+
+  
+</body>
+
+</html>

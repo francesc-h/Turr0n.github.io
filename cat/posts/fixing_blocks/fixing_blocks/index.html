@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="cat">
+
+<head>
+  
+  <title>Corregint dades: illes cadastrals de València ::
+    Francesc H. — Blog personal</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="L&amp;rsquo;ajuntament de València ofereix, mitjançant el Portal de Transparència i Dades Obertes, un conjunt de datasets prou interessant sota llicencia Creative Commons de Reconeiximent 4.0 Internacional (CC BY 4.0).
+Un d&amp;rsquo;aquests dataset que gaste habitualment és el d&amp;rsquo;Illes de cases cadastrals amb dades de població. La plataforma permet, en alguns casos, la previsualització de les dades i la descarrega en diversos formats. Principalment empre ferramentes de cartografia web com poden ser mapbox-gl-js o turf."/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/cat/posts/fixing_blocks/fixing_blocks/" />
+
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/img/favicon.png">
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Corregint dades: illes cadastrals de València"/>
+<meta name="twitter:description" content="L&rsquo;ajuntament de València ofereix, mitjançant el Portal de Transparència i Dades Obertes, un conjunt de datasets prou interessant sota llicencia Creative Commons de Reconeiximent 4.0 Internacional (CC BY 4.0).
+Un d&rsquo;aquests dataset que gaste habitualment és el d&rsquo;Illes de cases cadastrals amb dades de població. La plataforma permet, en alguns casos, la previsualització de les dades i la descarrega en diversos formats. Principalment empre ferramentes de cartografia web com poden ser mapbox-gl-js o turf."/>
+
+
+
+<meta property="og:title" content="Corregint dades: illes cadastrals de València" />
+<meta property="og:description" content="L&rsquo;ajuntament de València ofereix, mitjançant el Portal de Transparència i Dades Obertes, un conjunt de datasets prou interessant sota llicencia Creative Commons de Reconeiximent 4.0 Internacional (CC BY 4.0).
+Un d&rsquo;aquests dataset que gaste habitualment és el d&rsquo;Illes de cases cadastrals amb dades de població. La plataforma permet, en alguns casos, la previsualització de les dades i la descarrega en diversos formats. Principalment empre ferramentes de cartografia web com poden ser mapbox-gl-js o turf." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/cat/posts/fixing_blocks/fixing_blocks/" />
+<meta property="article:published_time" content="2020-05-06T16:54:12+02:00" />
+<meta property="article:modified_time" content="2020-05-06T16:54:12+02:00" /><meta property="og:site_name" content="Francesc H." />
+
+
+
+
+
+
+
+  
+  
+  <link rel="stylesheet" href="/css/fixing_blocks.css">
+  </link>
+  
+  
+
+  
+</head>
+
+<body class="">
+  <div class="container">
+    <header class="header">
+  <span class="header__inner">
+    <a href="/" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367"/>
+</svg>
+</span>
+    <span class="logo__text">Francesc H.</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/">Blog</a></li>
+        
+      
+        
+          <li><a href="/about">Sobre mi</a></li>
+        
+      
+      
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/">Blog</a></li>
+      
+    
+      
+        <li><a href="/about">Sobre mi</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+
+      </span>
+      <ul class="menu__sub-inner" style="margin: 0px 5px;">
+        <li class="menu__sub-inner-more-trigger">
+          CAT
+          <span class="menu__sub-inner-more-trigger-icon"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367"/>
+</svg>
+</span>
+        </li>
+
+        
+          <ul class="menu__sub-inner-more hidden">
+            
+              
+              
+            
+              
+              
+                <li><a href="/en/">EN</a></li>
+              
+            
+              
+              
+                <li><a href="/es/">ES</a></li>
+              
+            
+          </ul>
+      </ul>
+    </span>
+  </span>
+</header>
+
+
+    <div class="content">
+      
+<div class="post">
+  <h2 class="post-title"><a href="/cat/posts/fixing_blocks/fixing_blocks/">Corregint dades: illes cadastrals de València</a></h2>
+  <div class="post-meta">
+    
+    <span class="post-date">
+      2020-05-06
+    </span>
+    
+    
+    
+  </div>
+
+  
+
+  
+
+  <div class="post-content">
+    
+
+<p>L&rsquo;ajuntament de València ofereix, mitjançant el <a href="http://gobiernoabierto.valencia.es/va/data/" target="_blank" rel="noopener noreferrer">Portal de Transparència i Dades Obertes</a>, un conjunt de datasets prou interessant sota llicencia Creative Commons de Reconeiximent 4.0 Internacional (CC BY 4.0).</p>
+
+<p>Un d&rsquo;aquests dataset que gaste habitualment és el d&rsquo;<a href="http://gobiernoabierto.valencia.es/es/dataset/?id=manzanas-catastrales-con-datos-poblacion" target="_blank" rel="noopener noreferrer"><em>Illes de cases cadastrals amb dades de població</em></a>. La plataforma permet, en alguns casos, la previsualització de les dades i la descarrega en diversos formats. Principalment empre ferramentes de cartografia web com poden ser <code>mapbox-gl-js</code> o <code>turf.js</code>, pel que vaig descarregar el dataset en format <code>GEOJSON</code>.</p>
+
+<p>El dataset consisteix en un sol arxiu que conte una <code>FeatureCollection</code> amd 4916 elements. En principi cada una d&rsquo;aquestes <code>Features</code> representa una illa cadastral i es proporciona tant la quantitat total d&rsquo;habitants com la població en tres franges d&rsquo;edat: 0 a 14 anys, 15 a 65 i de 66 endavant.</p>
+
+<p>De forma general el dataset presenta dades vàlides i seguint l&rsquo;especificació  de <code>GEOJSON</code>, podem observar un exemple a continuació:
+
+  <figure class="left" >
+    <img src="/img/fixing_blocks/general_view.png"   />
+    
+  </figure>
+
+</p>
+
+<h1 id="errors">Errors</h1>
+
+<p>Ara bé, en algun punt del processat i publicació de les dades s&rsquo;ha degut cometre algun error, ja que aquelles illes formades per més d&rsquo;un polígon en lloc de ser definides com <code>MultiPolygon</code> simplement han sigut definides com <code>Polygons</code> amb els <code>Outer Rings</code> dels diferents polígons com <code>Inner Rings</code> d&rsquo;un sol polígon i per tant en renderitzar-los es produeixen resultats erronis com els següents:</p>
+
+<div class="error_images">
+    <img src="/img/fixing_blocks/error_0.png"  alt="Exemple d'illa on a soles un dels polígons que la constitueixen es renderitzat correctament.">
+    <img src="/img/fixing_blocks/error_1.png"  alt="Exemple d'illa on a soles un dels polígons que la constitueixen es renderitzat correctament.">
+    <img src="/img/fixing_blocks/error_2.png"  alt="Exemple d'illa on a soles un dels polígons que la constitueixen es renderitzat correctament.">
+    <img src="/img/fixing_blocks/error_4.png"  alt="Exemple d'illa on a soles un dels polígons que la constitueixen es renderitzat correctament.">
+    <img src="/img/fixing_blocks/error_5.png"  alt="Exemple d'illa on a soles un dels polígons que la constitueixen es renderitzat correctament.">
+    <img src="/img/fixing_blocks/error_12.png" alt="Exemple d'illa on a soles un dels polígons que la constitueixen es renderitzat correctament.">
+    <h6>Cada imatge mostra una de les illes <i>conflictives</i>, tant els polígons com els punts que els defineixen, amb major nivell d'opacitat. Podem apreciar clarament com hi ha zones sense rederitzar correctament.</h6>
+</div>
+
+<h1 id="algorisme-de-correció">Algorisme de correció</h1>
+
+<p>Per a solucionar aquesta problemàtica he arribat al següent algorisme en <code>Javascript</code> emprant <code>turf.js</code>.</p>
+
+<div class="expl_container">
+    <div class="row">
+        <span class="num">1.</span>
+        <pre>
+<code class="language-js">const blocks = await readFile("dataset.geojson").then(data => JSON.parse(data));
+const multi = [], final = turf.featureCollection([]);
+
+for (let block of blocks.features) {
+    if (block.geometry.coordinates.length > 1) multi.push(block)
+    else final.features.push(block);
+}</code></pre>
+        <p class="text">Carreguem el dataset, creem una nova <code>FeatureCollection</code> on emmagatzemarem el resultat final i una variable auxiliar per separar, mitjançant el bucle, les <code>Features</code> amb més d'un array de coordinades, la resta són correctes i les podem afegir directament a <code>final</code>.</p>
+    </div>
+    <!-- #################################################################### -->
+
+    <p style="margin: 30px 0px;">Les següents passes s'apliquen a totes les illes definides per més d'un polígon, es a dir, a tots els objectes de <code>multi</code> mitjançant un bucle.</p>
+
+    <div class="row">
+        <span class="num">2.</span>
+        <pre>
+<code class="language-js">let new_multi = turf.multiPolygon([]), rings_to_append = [];
+
+const pols = block.geometry.coordinates.map(coords => turf.polygon([coords]));
+const [biggest, biggestIndex] = getMax(pols);
+
+pols.splice( biggestIndex, 1 );</code></pre>
+        <div class="text">
+            <p style="margin: 0;">Declarem totes les variables que anem a emprar per cada illa:</p>
+            <ul style="margin-top: 0px;">
+                <li><code>new_multi</code>: resultat de modificar l'illa.</li>
+                <li><code>rings_to_append</code>: arrays de coordenades sobrants de la <code>Feature</code> original.</li>
+                <li><code>pols</code>: tots els <i>rings</i>, tan suposadament interiors com exteriors són convertits a polígons.</li>
+            </ul>
+            <p style="margin-bottom: 0px;">
+                La funció auxiliar <code>getMax</code>, proveït d'un array de polígons, torna el polígon d'àrea major i el seu índex dins de l'array. Retirem el polígon més gran de la llista de polígons i ens quedem amb la resta.
+            </p>
+        </div>
+    </div>
+    <!-- #################################################################### -->
+    <div class="row" style="margin-top: 30px;">
+        <span class="num">3.</span>
+        <pre>
+<code class="language-js">for (let pol of pols) {
+    if (turf.booleanContains(biggest, pol)) rings_to_append.push(pol);
+    else new_multi.geometry.coordinates.push(pol.geometry.coordinates);
+}</code></pre>
+        <p class="text">Comprovem, per cada un dels <i>rings</i> prèviament transformats a polígons, si està contingut dins del polígon més gran. Si efectivament ho està, l'afegirem posteriorment com un <i>inner ring</i> del polígon principal. En canvi, si el <i>ring</i> no es troba contingut, això vol dir que es tracta d'un polígon independent del principal i per tant s'afegeix  a <code>new_multi</code></p>
+    </div>
+    <!-- #################################################################### -->
+    <div class="row" style="margin-top: 30px;">
+        <span class="num">4.</span>
+        <pre>
+<code class="language-js">for (let ring of rings_to_append) {
+    biggest.geometry.coordinates.push(ring.geometry.coordinates[0]);
+}</code></pre>
+        <p class="text">Tots els <i>rings</i> que s'han comprovat interiors són afegits al principal.</p>
+    </div>
+    <!-- #################################################################### -->
+    <div class="row" style="margin-top: 30px;">
+        <span class="num">5.</span>
+        <pre>
+<code class="language-js">if (new_multi.geometry.coordinates.length != 0) {
+    new_multi.geometry.coordinates.push(biggest.geometry.coordinates)
+} else {
+    new_multi = biggest
+}</code></pre>
+        <p class="text">Si <code>new_multi</code> conté algun <i>ring</i>, ens trobem amb una illa formada per diversos polígons, per tant, sols queda afegir el més gran. En canvi, si no l'hem afegit res, ens trobem amb una illa d'un sol polígon però múltiples <i>inner rings</i>.</p>
+    </div>
+    <!-- #################################################################### -->
+    <div class="row" style="margin-top: 30px;">
+        <span class="num">6.</span>
+        <pre>
+<code class="language-js">new_multi.properties = block.properties
+final.features.push(new_multi);</code></pre>
+        <p class="text">Finalment copiem l'objecte <code>properties</code> de l'original per a no perdre les dades de població i l'afegim a la nova col·lecció.</p>
+    </div>
+    <!-- #################################################################### -->
+</div>
+
+<h1 id="resultats">Resultats</h1>
+
+<div class="error_images">
+    <img src="/img/fixing_blocks/correct_0.png"  alt="Exemple d'una illa corregida amb els seus multiples polígons correctament visibles.">
+    <img src="/img/fixing_blocks/correct_1.png"  alt="Exemple d'una illa corregida amb els seus multiples polígons correctament visibles.">
+    <img src="/img/fixing_blocks/correct_2.png"  alt="Exemple d'una illa corregida amb els seus multiples polígons correctament visibles.">
+    <img src="/img/fixing_blocks/correct_4.png"  alt="Exemple d'una illa corregida amb els seus multiples polígons correctament visibles.">
+    <img src="/img/fixing_blocks/correct_5.png"  alt="Exemple d'una illa corregida amb els seus multiples polígons correctament visibles.">
+    <img src="/img/fixing_blocks/correct_12.png" alt="Exemple d'una illa corregida amb els seus multiples polígons correctament visibles.">
+    <h6>Una vegada executat l'algorisme obtenim les illes correctament definides.</h6>
+</div>
+
+<h1 id="limitacions">Limitacions</h1>
+
+<p>Ara per ara l&rsquo;algorisme té certes limitacions. Imaginem per exemple una illa formada per dos edificis, és a dir, dos polígons diferents i a més a més, cada un d&rsquo;aquests polígons té un <i>inner ring</i>. En aquesta situació es corregiria correctament un d&rsquo;ells, el més gran; en canvi el segon es crearia sense el seu <i>inner ring</i>, que seria afegit com un tercer polígon independent, ja que aquest no és comprovaria si està contingut dins del segon polígon sinó en el primer.</p>
+
+<p>Tractant aquest dataset en particular aquesta limitació, a parer meu, no té molta importància ja que a soles una illa conté un <i>inner ring</i> en un polígon no principal. Aquesta illa és <code>refman: 55990</code> i degut a aquesta correcció errònia tenim una desviació de 6m<sup>2</sup> en l&rsquo;àrea total de l&rsquo;illa. Crec que és una desviació acceptable.</p>
+
+<p>En altres dataset aquest plantejament potser no siga suficientment precís i calga una revisió de l&rsquo;algorisme.</p>
+
+<hr />
+
+<div class="footnotes">
+    <h3>Referencies</h3>
+    <ul>
+        <li id="1">1. <a href="https://tools.ietf.org/html/rfc7946" target="_blank" rel="noopener noreferrer">IETF: <i>The GeoJSON format<i>.</a></li>
+        <li id="2">2. <a href="https://docs.mapbox.com/mapbox-gl-js/overview/" target="_blank" rel="noopener noreferrer">Mapbox-gl.js</a></li>
+        <li id="3">1. <a href="http://turfjs.org/" target="_blank" rel="noopener noreferrer">Turf.js</a></li>
+    </ul>
+</div>
+
+  </div>
+  
+
+  
+
+</div>
+
+    </div>
+
+    
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <a href="/" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367"/>
+</svg>
+</span>
+    <span class="logo__text">Francesc H.</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span>
+        <span>Theme created by <a href="https://twitter.com/panr" target="_blank" rel="noopener">panr</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+    
+  </div>
+
+  
+
+  
+</body>
+
+</html>

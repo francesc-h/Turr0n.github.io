@@ -3,25 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/es/categories/</loc>
+    <loc>/es/posts/fixing_blocks/fixing_blocks/</loc>
+    <lastmod>2020-05-06T16:54:12+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="/categories/"
+                hreflang="cat"
+                href="/cat/posts/fixing_blocks/fixing_blocks/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="/es/categories/"
+                href="/es/posts/fixing_blocks/fixing_blocks/"
                 />
   </url>
   
   <url>
     <loc>/es/</loc>
+    <lastmod>2020-05-06T16:54:12+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="cat"
+                href="/cat/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/"
+                href="/en/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -31,11 +38,55 @@
   </url>
   
   <url>
-    <loc>/es/tags/</loc>
+    <loc>/es/posts/</loc>
+    <lastmod>2020-05-06T16:54:12+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="cat"
+                href="/cat/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/posts/"
+                />
+  </url>
+  
+  <url>
+    <loc>/airbnb/</loc>
+    <lastmod>2020-01-19T19:41:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/es/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="cat"
+                href="/cat/categories/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/"
+                href="/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>/es/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="cat"
+                href="/cat/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"

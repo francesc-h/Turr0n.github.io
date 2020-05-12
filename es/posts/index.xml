@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Francesc H.</title>
+    <link>/es/posts/</link>
+    <description>Recent content in Posts on Francesc H.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 May 2020 16:54:12 +0200</lastBuildDate>
+    
+	<atom:link href="/es/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Corrigiendo datos: manzanas catastrales de València</title>
+      <link>/es/posts/fixing_blocks/fixing_blocks/</link>
+      <pubDate>Wed, 06 May 2020 16:54:12 +0200</pubDate>
+      
+      <guid>/es/posts/fixing_blocks/fixing_blocks/</guid>
+      <description>El ayuntamiento de València ofrece, mediante el Portal de Transparència i Dades Obertes, un conjunto de datasets bastante interesante bajo licencia Creative Commons de Reconocimiento 4.0 Internacional (CC BY 4.0).
+Uno de estos dataset que utilizo habitualmente es el de Manzanas catastrales con datos de población. La plataforma permite, en algunos casos, la previsualización de los datos y la descarga en varios formatos. Principalmente empleo herramientas de cartografía web como pueden ser mapbox-gl-js o turf.</description>
+    </item>
+    
+    <item>
+      <title>Airbnb: impacto en València</title>
+      <link>/airbnb/</link>
+      <pubDate>Sun, 19 Jan 2020 19:41:15 +0100</pubDate>
+      
+      <guid>/airbnb/</guid>
+      <description>¿Qué es Airbnb? Airbnb es una empresa que provee una plataforma online para anunciar alojamientos turísticos normalmente de corta estancia. Nació en noviembre de 2008 en la ciudad de San Francisco, después de menos de tres años la empresa anunció, en febrero de 2011, que se habían realizado un millón de reservas hasta la fecha. Once meses después, en enero de 2012, se alcanzó la cifra de 5 millones; durante el transcurso de ese mismo año se duplicaron las reservas y en junio se situaban en 10 millones1.</description>
+    </item>
+    
+  </channel>
+</rss>

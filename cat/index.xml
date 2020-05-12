@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Francesc H.</title>
+    <link>/cat/</link>
+    <description>Recent content on Francesc H.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 May 2020 16:54:12 +0200</lastBuildDate>
+    
+	<atom:link href="/cat/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Corregint dades: illes cadastrals de València</title>
+      <link>/cat/posts/fixing_blocks/fixing_blocks/</link>
+      <pubDate>Wed, 06 May 2020 16:54:12 +0200</pubDate>
+      
+      <guid>/cat/posts/fixing_blocks/fixing_blocks/</guid>
+      <description>L&amp;rsquo;ajuntament de València ofereix, mitjançant el Portal de Transparència i Dades Obertes, un conjunt de datasets prou interessant sota llicencia Creative Commons de Reconeiximent 4.0 Internacional (CC BY 4.0).
+Un d&amp;rsquo;aquests dataset que gaste habitualment és el d&amp;rsquo;Illes de cases cadastrals amb dades de població. La plataforma permet, en alguns casos, la previsualització de les dades i la descarrega en diversos formats. Principalment empre ferramentes de cartografia web com poden ser mapbox-gl-js o turf.</description>
+    </item>
+    
+  </channel>
+</rss>
