@@ -20,7 +20,21 @@
 
 .error_images h6 {
     margin-top: 5px;
+    text-align: justify;
 }
+
+@media screen and (max-width: 684px) {
+    .error_images {
+        flex-direction: column;
+    }
+
+    .error_images img {
+        width: 100%;
+        margin: 5px auto 0px !important;
+    }
+}
+
+/* ---------------------------------------------- */
 
 .expl_container {
     display: flex;
