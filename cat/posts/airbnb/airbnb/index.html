@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="cat">
+
+<head>
+  
+  <title>Airbnb: impacte a València ::
+    Francesc H. — Blog personal</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="¿Qué és Airbnb? Airbnb és una empresa que proveïx una plataforma en línia per anunciar allotjaments turístics, normalment de curta durada. Va nàixer en novembre de 2008 en la ciutat de San Francisco; en menys de tres anys l&amp;rsquo;empresa anuncià, en febrer de 2011, que s&amp;rsquo;havien realitzat un milió. Onze mesos després, el gener de 2012, s&amp;rsquo;assolí la xifra de 5 milions; durant aquell mateix any es duplicaren les reserves i en juny es trobaven en 10 milions1."/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/cat/posts/airbnb/airbnb/" />
+
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/img/favicon.png">
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Airbnb: impacte a València"/>
+<meta name="twitter:description" content="Breu anàlisi de la presència d&#39;Airbnb a la ciutat de València: tipus d&#39;anuncis, acumulació en poques mans i ofegament de certs barris."/>
+
+
+
+<meta property="og:title" content="Airbnb: impacte a València" />
+<meta property="og:description" content="Breu anàlisi de la presència d&#39;Airbnb a la ciutat de València: tipus d&#39;anuncis, acumulació en poques mans i ofegament de certs barris." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/cat/posts/airbnb/airbnb/" />
+<meta property="article:published_time" content="2020-01-19T19:41:15+01:00" />
+<meta property="article:modified_time" content="2020-01-19T19:41:15+01:00" /><meta property="og:site_name" content="Francesc H." />
+
+
+
+
+
+
+
+  
+  
+  <link rel="stylesheet" href="/css/airbnb.css">
+  </link>
+  
+  
+
+  
+  
+  <script src="/js/d3.min.js"></script>
+  
+  <script src="/js/d3-annotation.min.js"></script>
+  
+  <script src="/js/map_wrapper.js"></script>
+  
+  
+</head>
+
+<body class="">
+  <div class="container">
+    <header class="header">
+  <span class="header__inner">
+    <a href="/" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367"/>
+</svg>
+</span>
+    <span class="logo__text">Francesc H.</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/">Blog</a></li>
+        
+      
+        
+          <li><a href="/about">Sobre mi</a></li>
+        
+      
+      
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/">Blog</a></li>
+      
+    
+      
+        <li><a href="/about">Sobre mi</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+
+      </span>
+      <ul class="menu__sub-inner" style="margin: 0px 5px;">
+        <li class="menu__sub-inner-more-trigger">
+          CAT
+          <span class="menu__sub-inner-more-trigger-icon"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367"/>
+</svg>
+</span>
+        </li>
+
+        
+          <ul class="menu__sub-inner-more hidden" id="langSelector">
+            
+              
+              
+            
+              
+              
+                <li><a href="/en/">EN</a></li>
+              
+            
+              
+              
+                <li><a href="/es/">ES</a></li>
+              
+            
+          </ul>
+      </ul>
+    </span>
+  </span>
+</header>
+
+
+    <div class="content">
+      
+<div class="post">
+  <h2 class="post-title"><a href="/cat/posts/airbnb/airbnb/">Airbnb: impacte a València</a></h2>
+  <div class="post-meta">
+    
+    <span class="post-date">
+      2020-01-19
+    </span>
+    
+    <span class="post-author">—  Francesc H.</span>
+    
+  </div>
+
+  
+
+  
+
+  <div class="post-content">
+    
+
+<h2 id="qué-és-airbnb">¿Qué és Airbnb?</h2>
+
+<p>Airbnb és una empresa que proveïx una plataforma en línia per anunciar allotjaments turístics, normalment de curta durada. Va nàixer en novembre de 2008 en la ciutat de San Francisco; en menys de tres anys l&rsquo;empresa anuncià, en febrer de 2011, que s&rsquo;havien realitzat <span style="background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #C4E7D4 65%); border-radius: 3px;" data-color="#C4E7D4">un milió</span>. Onze mesos després, el gener de 2012, s&rsquo;assolí la xifra de <span style="background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #C4E7D4 65%); border-radius: 3px;" data-color="#C4E7D4">5 milions</span>; durant aquell mateix any es duplicaren les reserves i en juny es trobaven en <span style="background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #C4E7D4 65%); border-radius: 3px;" data-color="#C4E7D4">10 milions</span><sup class="footnote"><a href="#1">1</a></sup>.</p>
+
+<p>Segons anuncien en la seua pàgina web, actualment hi ha més de set milions d&rsquo;allotjaments
+anunciats en la plataforma, presents en més de cent mil ciutats de 191 països. Una altra xifra estratosfèrica en la qual hem de reparar és el nombre de persones que s&rsquo;allotgen cada nit de mitja en un Airbnb al món: 2 milions<sup class="footnote"><a href="#2">2</a></sup>. Amb aquestes xifres és clar que Airbnb és un dels actors més importants del mercat turístic actualment.</p>
+
+<h2 id="tipus-d-anuncis">Tipus d&rsquo;anuncis</h2>
+
+<p>Airbnb permet anunciar tres tipus d&rsquo;allotjaments: apartaments/cases senceres, habitacions compartides i habitacions privades. Els anunciants, o els amfitrions com els denomina l&rsquo;empresa, poden anunciar diverses habitacions de la mateixa casa en anuncis separats.</p>
+
+<p>En València trobem 7654 anuncis: <strong style="color: #50bda1;">5180</strong> apartaments/cases, <strong style="color: #f18867;">2439</strong> habitacions privades y <strong style="color: #65587f;">35</strong> habitacions compartides.</p>
+
+<div class="bar_chart_horiz">
+    <div style="background: #50bda1; width: 67.67%; color: white;">
+        <p>67.67%</p>
+    </div>
+    <div style="background: #f18867; width: 31.86%; color: white;">
+        <p>31.86%</p>
+    </div>
+    <div style="background: #65587f; width: 0.45%;"></div>
+</div>
+
+<h2 id="amfitrions">Amfitrions</h2>
+
+<p>L&rsquo;economia col·laborativa és un dels suposats pilars amb els quals s&rsquo;erigix Airbnb. Segons aquest concepte aquells propietaris que no utilitzen la seua residencia o totes les seues habitacions publicarien un anunci per poder aprofitar aquest espai lliure. Dins d&rsquo;aquest ús trobaríem aquells amfitrions amb sols un anunci, mentre que la resta d&rsquo;anunciants amb dos o més anuncis quedarien fora de la suposada economia col·laborativa. El següent gràfic mostra la quantitat d&rsquo;amfitrions segons el nombre d&rsquo;anuncis:</p>
+
+<div class="bar_chart_horiz" style="height: auto;">
+    <div style="width: 72.7%; display: flex; flex-direction: column;">
+        <p>1 anunci</p>
+        <div style="width: 100%; background: #b0a160; color: white;">
+            <p>72.7%</p>
+        </div>
+    </div>
+    <div style="width: 27.3%; display: flex; flex-direction: column;">
+        <p>2 o més</p>
+        <div style="width: 100%; background: #5b8c85; color: white;">
+            <p>27.3%</p>
+        </div>
+    </div>
+</div>
+
+<p>Podem observar com la gran majoria d&rsquo;anunciants complixen amb aquesta premissa. Aquells que s&rsquo;allunyen d&rsquo;un suposat ús col·laboratiu anunciant dos o més allotjaments són minoria.
+Tot i això, encara sent els primers el grup més nombrós (3198) a soles posseïxen el 41.78% del total d&rsquo;anuncis en la plataforma. Els propietaris amb diversos anuncis (1201) acumulen el percentatge restant: 58.22%.</p>
+
+<p>En la següent gràfica representem la desigual acumulació d&rsquo;anuncis:</p>
+
+<div class="waffle_container">
+    <div>
+        <div class="waffle_wrapper right" style="margin-right: 10px;">
+            <div class="title">
+                <h3>Anunciants</h3>
+            </div>
+            <div class="side_text">
+                <div style="height: 20%; --border-color: #8cba51;">
+                    <span>20%</span>
+                </div>
+                <div style="height: 80%; --border-color: #ff5d6c;">
+                    <span>80%</span>
+                </div>
+            </div>
+            <div class="waffle hosts"></div>
+        </div>
+        <div class="waffle_wrapper left">
+            <div class="title">
+                <h3>Anuncis</h3>
+            </div>
+            <div class="side_text">
+                <div style="height: 50%; --border-color: #8cba51;">
+                    <span>50%</span>
+                </div>
+                <div style="height: 50%; --border-color: #ff5d6c;">
+                    <span>50%</span>
+                </div>
+            </div>
+            <div class="waffle listings"></div>
+        </div>
+    </div>
+    <div class="expl">
+        <h2>¿Com es llig aquest gràfic?</h2>
+        <p>
+            Cada quadrat representa l'1% d'una certa quantitat, en aquest cas d'anunciants i anuncis respectivament; ambdós han estat dividits en dos grups: <span style="background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #8cba51 65%); border-radius: 3px;" data-color="#C4E7D4">verd</span> i <span style="background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #ff5d6c 65%); border-radius: 3px;" data-color="#C4E7D4">roig</span>. 
+        </p>
+    </div>
+</div>
+
+<p>A València <span style="background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #8cba51 65%); border-radius: 3px;" data-color="#C4E7D4">el 20% dels anunciants acumula el 50% dels anuncis</span>. Ens trobem en una situació en la qual un reduït nombre d&rsquo;anunciants acumula una gran quantitat d&rsquo;immobles, aquests grans propietaris són individus o empreses que es dediquen de manera professional a l&rsquo;explotació dels habitatges turístics i són els principals responsables de l&rsquo;especulació immobiliària associada a la turistificació dels barris de València.</p>
+
+<h2 id="anuncis">Anuncis</h2>
+
+<p>Tal com ocorre amb l&rsquo;acumulació d&rsquo;habitatges en unes poques mans, la distribució geogràfica d&rsquo;aquests és molt desigual. En els següents mapes explorem aquest desequilibri.</p>
+
+<div class="maps">
+    <div id="map1">
+        <h5>Quantitat total</h5>
+        <svg></svg>
+    </div>
+    <div id="map2">
+        <h5>Anuncis / 1000 habitants</h5>
+        <svg></svg>
+    </div>
+    <div id="map3">
+        <h5>Anuncis / superfície (km2)</h5>
+        <svg></svg>
+    </div>
+</div>
+
+<p>En quantitat total d&rsquo;anuncis destaquen els barris del Cabanyal-Canyamelar i Russafa, ares altament saturades tant per la seua ubicació pròxima a punts d&rsquo;interés turístic com poden ser el centre històric i la platja com per la seua arquitectura característica.</p>
+
+<p>Els dos mapes següents descriuen una situació alarmant: l&rsquo;expulsió dels veïns dels barris més cèntrics de la ciutat. En ajustar el nombre d&rsquo;anuncis respecte a la quantitat d&rsquo;habitants observem com són aquests barris els que suporten un major nombre d&rsquo;habitatges turístics en relació amb la quantitat real de persones que els habiten dia a dia.</p>
+
+<hr>
+
+<div class="footnotes">
+    <ul>
+        <li id="1">1. <a href="https://en.wikipedia.org/wiki/Timeline_of_Airbnb" target="_blank" rel="noopener noreferrer">Article <i>Timeline of Airbnb<i> a la Wikipedia.</a></li>
+        <li id="2">2. <a href="https://news.airbnb.com/fast-facts/" target="_blank" rel="noopener noreferrer"><i>Airbnb Newsroom: Fast Facts</i></a></li>
+        <hr>
+        <li>Tots els gràfics i mapes són d'elaboració pròpia.<a href="http://insideairbnb.com/index.html" target="_blank" rel="noopener noreferrer"> Les dades utilitzades en aquest article han sigut obtingudes de la plataforma InsideAirbnb.</a></li>
+    </ul>
+</div>
+
+  </div>
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span class="pagination__title-h">Llegir altres articles</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      <span class="button previous">
+        <a href="/cat/posts/fixing_blocks/fixing_blocks/">
+          <span class="button__icon">←</span>
+          <span class="button__text">Corregint dades: illes cadastrals de València</span>
+        </a>
+      </span>
+      
+      
+    </div>
+  </div>
+  
+
+  
+
+</div>
+
+    </div>
+
+    
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <a href="/" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367"/>
+</svg>
+</span>
+    <span class="logo__text">Francesc H.</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span>
+        <span>Theme created by <a href="https://twitter.com/panr" target="_blank" rel="noopener">panr</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+    
+  </div>
+
+  
+
+  
+  
+  <script src="/posts/airbnb/app.js"></script>
+  
+  
+</body>
+
+</html>

@@ -53,6 +53,21 @@
   </url>
   
   <url>
+    <loc>/cat/posts/airbnb/airbnb/</loc>
+    <lastmod>2020-01-19T19:41:15+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/posts/airbnb/airbnb/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cat"
+                href="/cat/posts/airbnb/airbnb/"
+                />
+  </url>
+  
+  <url>
     <loc>/cat/categories/</loc>
     <xhtml:link
                 rel="alternate"
