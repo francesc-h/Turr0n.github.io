@@ -63,11 +63,35 @@ class MAP {
     }
 
     updateProp(props) {
-        for (let key in eco) {
+        for (let key in props) {
             this[key] = props[key];
         }
 
-        resize();
+        if ("property" in props) {
+            this.max = 0
+            this.min = Infinity;
+
+            this.data.features.forEach(f => {
+                let temp = this.getValue(f)
+                if (temp > this.max) this.max = temp;
+                if (temp < this.min) this.min = temp;
+            });
+
+            this.mappingFunc = d3.scaleLinear()
+                .domain([this.min, this.max])
+                .range([0, 1]);
+
+            if (this.bar) {
+                this.svg.select("#colorbar").remove()
+            }
+        }
+
+        // Redraw
+        this.drawBase();
+
+        if (this.bar) {
+            this.addBar({ticks: 2, xOffset: 30})
+        }
     }
 
     resize() {
@@ -113,13 +137,28 @@ class MAP {
     addBar({ticks = 4, color = d3.schemeOrRd,
         xOffset = 0, yOffset = 0, 
         width = 125, height = 20}) {
+        
+        this.bar = true;
+        /*this.bar_params = {
+            ticks: ticks,
+            xOffset: xOffset,
+            yOffset: yOffset,
+            color: color,
+            width: width,
+            height: height
+        }
+
+        console.log(this.bar_params)*/
+
         //A color scale
         var colorScale = d3.scaleLinear()
                            .range(color[color.length - 1]);
 
         //Append multiple color stops by using D3's data/enter step
         const id = String(Math.random())
-        this.svg.append("defs")
+        
+        const wrapper = this.svg.append("g").attr("id", "colorbar");
+        wrapper.append("defs")
             .append("linearGradient").attr("id", id)
             .selectAll("stop")
             .data(colorScale.range())
@@ -127,7 +166,7 @@ class MAP {
             .attr("offset", (_, i) => i / (colorScale.range().length - 1))
             .attr("stop-color", (d) => d );
 
-        this.svg.append("rect")
+        wrapper.append("rect")
             .attr("x", 10 + xOffset)
             .attr("y", this.h - 45 + yOffset)
             .attr("width", width)
@@ -144,7 +183,7 @@ class MAP {
 
         for (let i = 1; i <= ticks+1; i++) tickValues.push(size*i)
 
-        this.svg.append("g")
+        wrapper.append("g")
             .attr("transform", "translate(" + (10 + xOffset) + "," + (this.h - 25 + yOffset) + ")")
             .call(d3.axisBottom(xScale).tickValues(tickValues))
     }

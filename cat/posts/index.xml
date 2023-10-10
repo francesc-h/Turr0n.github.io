@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Francesc H.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 May 2020 16:54:12 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 02 Aug 2023 11:14:00 +0200</lastBuildDate>
     
 	<atom:link href="/cat/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Baixos: la nova frontera del turisme</title>
+      <link>/cat/posts/baixos/baixos/</link>
+      <pubDate>Wed, 02 Aug 2023 11:14:00 +0200</pubDate>
+      
+      <guid>/cat/posts/baixos/baixos/</guid>
+      <description>El turisme tot ho devora al seu pas. El desig (o la necessitat creada) de viatjar aboca territoris d’arreu del món a ser consumits com una mercaderia més, productes d’un sol ús mitjançant els quals poder dir: “jo he estat allí”. El que en un dia foren barris, pobles o ciutats habitades i viscudes per les seues veïnes, hui en dia s’han convertit, en molts casos, en espais buits, simples escenaris asèptics amb els quals anar completant el teu compte d’Instagram.</description>
+    </item>
     
     <item>
       <title>Corregint dades: illes cadastrals de València</title>

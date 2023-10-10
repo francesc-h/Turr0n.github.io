@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="cat">
+
+<head>
+  
+  <title>Baixos: la nova frontera del turisme ::
+    Francesc H. — Blog personal</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="El turisme tot ho devora al seu pas. El desig (o la necessitat creada) de viatjar aboca territoris d’arreu del món a ser consumits com una mercaderia més, productes d’un sol ús mitjançant els quals poder dir: “jo he estat allí”. El que en un dia foren barris, pobles o ciutats habitades i viscudes per les seues veïnes, hui en dia s’han convertit, en molts casos, en espais buits, simples escenaris asèptics amb els quals anar completant el teu compte d’Instagram."/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/cat/posts/baixos/baixos/" />
+
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/img/favicon.png">
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Baixos: la nova frontera del turisme"/>
+<meta name="twitter:description" content="La transformació de baixos comercials en apartaments turístics aprofundeix i empitjora la turístificació dels barris de València. Presentem ací el primer anàlisi de les impactes d&#39;aquest procés, acompanyat d&#39;un visor web per ubicar les noves vivendes turístiques al barri d&#39;Aiora."/>
+
+
+
+<meta property="og:title" content="Baixos: la nova frontera del turisme" />
+<meta property="og:description" content="La transformació de baixos comercials en apartaments turístics aprofundeix i empitjora la turístificació dels barris de València. Presentem ací el primer anàlisi de les impactes d&#39;aquest procés, acompanyat d&#39;un visor web per ubicar les noves vivendes turístiques al barri d&#39;Aiora." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/cat/posts/baixos/baixos/" />
+<meta property="article:published_time" content="2023-08-02T11:14:00+02:00" />
+<meta property="article:modified_time" content="2023-08-02T11:14:00+02:00" /><meta property="og:site_name" content="Francesc H." />
+
+
+
+
+
+
+
+  
+  
+  <link rel="stylesheet" href="/css/baixos.css">
+  </link>
+  
+  
+
+  
+  
+  <script src="/js/d3.min.js"></script>
+  
+  <script src="/js/rough.js"></script>
+  
+  <script src="/js/graph-scroll.js"></script>
+  
+  <script src="/js/map_wrapper.js"></script>
+  
+  
+</head>
+
+<body class="">
+  <div class="container">
+    <header class="header">
+  <span class="header__inner">
+    <a href="/" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367"/>
+</svg>
+</span>
+    <span class="logo__text">Francesc H.</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+
+      </span>
+      <ul class="menu__sub-inner" style="margin: 0px 5px;">
+        <li class="menu__sub-inner-more-trigger">
+          CAT
+          <span class="menu__sub-inner-more-trigger-icon"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367"/>
+</svg>
+</span>
+        </li>
+
+        
+          <ul class="menu__sub-inner-more hidden" id="langSelector">
+            
+              
+              
+            
+              
+              
+                <li><a href="/en/">EN</a></li>
+              
+            
+              
+              
+                <li><a href="/es/">ES</a></li>
+              
+            
+          </ul>
+      </ul>
+    </span>
+  </span>
+</header>
+
+
+    <div class="content">
+      
+<div class="post">
+  <h2 class="post-title"><a href="/cat/posts/baixos/baixos/">Baixos: la nova frontera del turisme</a></h2>
+  <div class="post-meta">
+    
+    <span class="post-date">
+      2023-08-02
+    </span>
+    
+    
+    
+  </div>
+
+  
+
+  
+  
+  <img src="/img/baixos/header.JPG" class="post-cover" />
+  
+  
+
+  <div class="post-content">
+    
+
+<p>El turisme tot ho devora al seu pas. El desig (o la necessitat creada) de viatjar aboca territoris d’arreu del món a ser consumits com una mercaderia més, productes d’un sol ús mitjançant els quals poder dir: “jo he estat allí”. El que en un dia foren barris, pobles o ciutats habitades i viscudes per les seues veïnes, hui en dia s’han convertit, en molts casos, en espais buits, simples escenaris asèptics amb els quals anar completant el teu compte d’Instagram.</p>
+
+<p>Aquesta caricatura plastificada de les destinacions turístiques contrasta de manera sagnant amb les condicions materials de vida de les persones que habiten eixos indrets. A València, el preu mitjà del lloguer ha superat la barrera dels 1500€ en el segon trimestre de 2023 [<a href="https://observa.webs.upv.es/">1</a>]. A més del vertiginós augment de preus s’ha de destacar la forta contracció de l’oferta d’habitatges: 17 dels 19 districtes de la ciutat han reduït l’oferta de lloguer entre un 25% i un 75%. Aquesta situació d’emergència residencial s’ha de contextualitzar en un escenari d’una gran pèrdua de poder adquisitiu en l’any 2022. Mentre que la inflació mitjana de l’any es situava al 8.4%, els salaris sols creixien un 2,78% [<a href="https://elpais.com/economia/2023-01-10/los-trabajadores-pierden-poder-adquisitivo-los-sueldos-crecen-un-278-casi-seis-puntos-menos-que-el-ipc.html">2</a>]. Cada volta resulta més difícil viure en les ciutats.</p>
+
+<div class="big_numbers">
+    <div class="number">
+        <h2>2.197.133</h2>
+        <span>Turistes</span>
+    </div>
+    <div class="number">
+        <h2>5.325.710</h2>
+        <span>Pernoctacions</span>
+    </div>
+    <div class="number">
+        <h2>6.952</h2>
+        <span>Apartaments turístics</span>
+    </div>
+</div>
+
+<p>La realitat és que aquest és el model, conrear el turisme com activitat econòmica principal de la ciutat coste el que coste, sense importar els efectes que aquest puga tindre sobre el territori i els que l&rsquo;habiten. L&rsquo;any 2022 vàrem rebre més de 2 milions de turistes[<a href="https://fundacion.visitvalencia.com/sites/default/files/media/downloadable-file/files/Folleto_Estadisticas_2022.pdf">3</a>] en una ciutat de poc menys de 800.000 veïnes (eixim a 2,77 turistes per habitant!). I com sempre, mai és suficient, sempre en volen més. Mentre que la fundació Visit València quantifica en 6.952 els apartaments turístics en la ciutat, Exceltur incrementa la xifra fins als 7.545 [<a href="https://cincodias.elpais.com/companias/2023-05-02/las-viviendas-turisticas-se-disparan-en-el-ultimo-ano-se-abrieron-41-al-dia.html">4</a>]. Però això tampoc és suficient, fan falta més apartaments i la indústria turística pareix que ha trobat una nova fórmula amb la qual continuar l&rsquo;expansió.</p>
+
+<h2 id="una-petició">Una petició</h2>
+
+<p>Hem de retrocedir fins a 2014, exactament al 4 de desembre de 2014. Eixe dijous, <span style="background: linear-gradient(180deg, rgba(255,255,255,0) 80%, #fe5186  65%);" data-color="#C4E7D4">Consuelo Dasí T.</span>, va presentar a l’Ajuntament de València una al·legació a la revisió simplificada del Pla General d&rsquo;Ordenació Urbana (PGOU) encetada a finals de 2010. En aquest escrit sol·licitava la modificació de la normativa urbanística municipal per tal de permetre implantar usos hotelers en les mateixes plantes dels edificis que els usos terciaris. És a dir, poder utilitzar els locals comercials dels edificis de la ciutat per a obrir hotels, hostals o apartaments turístics.</p>
+
+<p>Aquesta petició responia a una voluntat flexibilitzadora, ja que la normativa vigent en aquell moment, tot i que sistemàticament incomplida, establia que aquest tipus d’establiments sols podien existir o bé en edificis dedicats exclusivament a l’activitat hotelera o ocupant tota la planta, per damunt dels usos terciaris i per sota dels residencials [<a href="http://www.valencia.es/ayuntamiento/urbanismo2.nsf/0/BC96A2380215ECD1C12583540031C5EB/$FILE/82-2017%20Modificaci%C3%B3n%20Usos%20en%20Plantas%20No%20Residenciales_%20AD_firmado.pdf?OpenElement">5</a>], mai podien coexistir habitatges turístics i comerços en la mateixa planta.</p>
+
+<p>No és casualitat que Consuelo Dasí realitzara aquesta petició, ja que és administradora d’una empresa dedicada a l’hostaleria, <span style="background: linear-gradient(180deg, rgba(255,255,255,0) 80%, #fe5186  65%);" data-color="#C4E7D4">“DORMAVALENCIA REINO SL”</span>, que gestiona conjuntament amb una germana, la qual també administra l’empresa <span style="background: linear-gradient(180deg, rgba(255,255,255,0) 80%, #fe5186  65%);" data-color="#C4E7D4">“DORMAVALENCIA ALOJAMIENTOS SL”</span> [<a href="https://boe.es/borme/dias/2019/05/24/pdfs/BORME-A-2019-97-46.pdf">6</a>]. Aquestes empreses són propietàries de dos hostals i uns apartaments [<a href="https://dormavalencia.com/">7</a>] a la ciutat. Els apartaments, ubicats al carrer Abastos número 5, ocupen totalment un edifici de 1926 ubicat enfront del mercat del Grau (segons la informació disponible al Cadastre, l’edifici sols compta amb dos habitatges, el mateix nombre d’apartaments que podem trobar anunciats en línia). Irònicament, als baixos no trobem apartaments sinó un bar, una agència de viatges i una empresa de lloguer de bicicletes per a turistes.
+<div class="abastos">
+<div>
+Carrer Abastos, 5 - 2013
+<img src="/img/baixos/abastos_2013.png"></img>
+</div>
+<div>
+2023
+<img src="/img/baixos/abastos_2023.png"></img>
+</div>
+</div></p>
+
+<p>En la revisió del PGOU es va rebutjar l&rsquo;al·legació donat que excedia els objectius del procés. Tot i això, els tècnics no van tancar la porta al fet que es valorara en altres procediments en el futur [<a href="http://www.valencia.es/ayuntamiento/urbanismo2.nsf/0/B124AED444258A61C12581C50044B599/$FILE/INFORME%20ALEGACIONES%202015.%20GRUPO%207.1_Fdo..pdf?OpenElement">8</a>]. I efectivament, el 28 de març de 2017, el cap de l&rsquo;àrea de Planificació i Gestió Urbana, en aquell moment el regidor socialista Vicent Manuel Sarrià i Morell, actual diputat al Congrés [<a href="https://www.congreso.es/es/busqueda-de-diputados?p_p_id=diputadomodule&amp;p_p_lifecycle=0&amp;p_p_state=normal&amp;p_p_mode=view&amp;_diputadomodule_mostrarFicha=true&amp;codParlamentario=219&amp;idLegislatura=XV&amp;mostrarAgenda=false">9</a>], va encarregar els tècnics municipals que estudiaren aquesta proposta i valoraren la seua viabilitat.</p>
+
+<p>Un any més tard, en un ple ordinari el 25 d’octubre de 2018, l’Ajuntament de València va aprovar la modificació mitjançant els vots a favor del Partit Socialista, Compromís i València en Comú [<a href="http://www.valencia.es/ayuntamiento/urbanismo2.nsf/0/A6EAEBD02DADD553C125835400310942/$FILE/82-2017%20ACUERDO%20Aprobaci%C3%B3n%20Defintiva.pdf?OpenElement&amp;lang=1">10</a>]. <strong>Des d’aleshores, els baixos de la ciutat es poden convertir en apartaments turístics</strong>. Segons l’Ajuntament <em>“se considera que resulta viable e interesante para el interés público modificar las normas urbanísticas&rdquo;</em>, basant la seua justificació en <em>“eliminar incoherencias y restricciones innecesarias”</em>. Aquesta flexibilització es suposa innòcua a la resta d’usos terciaris existents en la ciutat, afirmant que <em>&ldquo;no se deben producir afecciones directas o molestias entre ellos”</em> i <em>“los usos terciarios hoteleros  […] y el resto de usos no residenciales no interfieren entre ellos negativamente”</em> [<a href="http://www.valencia.es/ayuntamiento/urbanismo2.nsf/0/BC96A2380215ECD1C12583540031C5EB/$FILE/82-2017%20Modificaci%C3%B3n%20Usos%20en%20Plantas%20No%20Residenciales_%20AD_firmado.pdf?OpenElement">11</a>].</p>
+
+<p>La suposada dòcil i pacífica convivència entre apartaments i locals comercials es garantix establint una clara separació per accedir als diferents establiments: cada apartament ha de comptar amb una eixida separada al carrer. El consistori no pot errar més el tir, ja que és la mateixa possibilitat de construir habitatges turístics en eixos nous espais la font del problema, no les condicions d’accés als apartaments, qüestió tractada amb preocupació en aquesta modificació. Sent honests, els tècnics municipals no s’equivoquen ni han sigut negligents, simplement, com diria Jorge Dioni López: <em>&ldquo;No es que el modelo funcione mal. Es que es el modelo.&rdquo;</em>. El model és facilitar i aprofundir en la turistificació i la creació d’un nou nínxol de mercat per als inversors, sense importar els efectes que aquesta mesura pot tindre als barris i les seues veïnes.</p>
+
+<p>Aquesta flexibilització suposa una nova amenaça per als comerços de proximitat que ara també han de competir amb la parasitària plaga dels apartaments turístics per sobreviure. Front un escenari econòmic incert, marcat pel constant augment de preus de matèries primeres i la inflació, l’adquisició i transformació de baixos comercials per construir habitatges vacacionals crea una nova finestra d’oportunitat per als inversors, mitjançant la qual obtindre altes rendibilitats en un curt espai de temps. Aquest nou model produirà una inevitable pujada dels preus del lloguer dels locals comercials, que desplaçarà als petits comerciants, impulsant la destrucció del teixit comercial de proximitat que vertebra els barris.</p>
+
+<h2 id="una-taca-d-oli">Una taca d&rsquo;oli</h2>
+
+<p>Tot i haver aprovat la modificació normativa en 2018, no ha sigut fins fa un any que hem començat a veure de manera considerable baixos sent transformats en apartaments turístics. Una vegada encetat el procés, aquest s&rsquo;ha estés com una taca d&rsquo;oli per tots els barris. Diferents associacions veïnals ja s&rsquo;han fet ressò d&rsquo;aquesta problemàtica [<a href="https://www.levante-emv.com/valencia/2023/08/01/transformacion-bajos-comerciales-pisos-turisticos-90548718.html">12</a>] que fins i tot afecta a barris que anteriorment havien pogut patir una pressió turística reduida. Podem especular que aquest retard entre l&rsquo;aprovació de la modificació i l&rsquo;adopció efectiva per part del mercat ha trigat tant de temps degut a la parada i conseqüent contracció de la indústria turística després de la pandèmia de Covid-19.</p>
+
+<p>Un dels exemples més esperpèntics el podem trobar en la reconversió d&rsquo;un antic supermercat en Plaça Hondures en 21 apartaments turístics [<a href="https://www.levante-emv.com/valencia/2023/07/31/vecinos-honduras-claman-turistificacion-barrio-90523271.html">13</a>]. Pressió turística en continu augment i monocultiu hostaler a la zona és una combinació fatídica que ja hem patit i patim a Russafa, Ciutat Vella o al Cabanyal-Canyamelar. Eixe és el paisatge urbà que volen inversors i administracions, una ciutat de restaurants singulars, bars i franquícies de baix cost al servei del turisme.</p>
+
+<p>Aquest procés liberalitzador que permet convertir immobles comercials en habitatges o apartaments turístics ha aparegut en públic recentment com una resposta per fer front a la crisi residencial que patix l&rsquo;Estat espanyol [<a href="https://www.lavanguardia.com/economia/20221215/8643473/locales-vacios-oportunidad-incrementar-parque-viviendas-ciudades-brl.html">14</a>]. Arreu de tota la geografia trobem administracions que flexibilitzen normatives per tal de facilitat aquesta transformació: <a href="https://autonomico.elconfidencialdigital.com/articulo/galicia/galicia-eliminara-requisitos-facilitar-que-bajos-comerciales-conviertan-viviendas/20230224163855098857.html">Galícia</a>, <a href="https://elpais.com/espana/madrid/2023-08-12/en-madrid-hay-un-21-mas-de-viejos-locales-convertidos-en-vivienda-que-antes-de-la-pandemia.html">Madrid</a> o al <a href="https://www.epe.es/es/activos/20220425/comunidad-valenciana-locales-vacios-viviendas-habituales-13562852">País Valencià</a>.</p>
+
+<p>En lloc d&rsquo;atacar l&rsquo;arrel del problema, les administracions li juguen la partida als inversors, facilitant nous espais on especular, destruint el comerç de proximitat i desarticulant els barris. Per viure en una ciutat necessitem habitatges dignes i a preus assequibles però, també, un comerç local que ens permeta satisfer les nostres necessitats de consum i ens proporcione productes de proximitat, contribuint així a una economia arrelada al territori. A més, els comerços juguen un paper fonamental en el teixit humà dels barris, sent uns dels principals espais d&rsquo;interacció social de moltes veïnes i veïns.</p>
+
+<p><img src="/img/baixos/evolució_comerç.png"></img></p>
+
+<p>Aquesta política contribuïx a destruir el sector menorista tradicional afavorint les grans superfícies, centres comercials i a les grans plataformes en línia. Segons dades de Caixabank Research [<a href="https://realtimeeconomics.caixabankresearch.com/#/monitor">15</a>] el comerç presencial i l’electrònic estan seguint tendències molt diferents a l&rsquo;Estat espanyol. Mentre que el primer es troba força estancat (a excepció de l’any 2020 i 2021 quan va patir una forta davallada seguida d’una ràpida recuperació), el segon manté una tendència de creixement, frenadat en l’últim any per la inflació. La diferència en el creixement interanual acumulat entre les dues és de més de 900 punts percentuals.</p>
+
+<p><img src="/img/baixos/comerç_ine.png" alt="" srcset=""></p>
+
+<p>Podem contextualitzar aquesta informació a la província de València si consultem les dades de l&rsquo;<a href="https://www.ine.es/jaxiT3/Tabla.htm?t=301&amp;L=0">INE</a>, que ens indiquen que en el període 2010-2022 han desaparegut 4776 locals comercials dedicats a la venda minorista, un descens del 15% en 12 anys. Si separem els locals segons el nombre d’assalariats de l’empresa corresponent, observem que únicament ha augmentat la quantitat de locals comercials associats a empreses de 20 o més assalariats. Encara més, els locals d’empreses amb més de 100 treballadors s’han multiplicat per 5. Les grans empreses es multipliquen mentre el comerç tradicional de proximitat desapareix.</p>
+
+<p>Caminem cap a un escenari en què sols comprarem en supermercats, grans superfícies, centres comercials i tendes en línia. I l’Ajuntament de València ho sap. En març de 2022 va llançar el programa d’ajudes &ldquo;Amunt persianes&rdquo; [<a href="https://www.valencia.es/cas/actualidad/-/content/amunt-persianas">16</a>] amb l’objectiu de subvencionar la creació de nous negocis en locals comercials anteriorment buits. Les ajudes van des de 10.000€ fins a 20.000€ segons el barri on s’ubique el negoci [<a href="https://www.valencia.es/documents/20142/16087618/0324+PPT+Amunt+persianes.+Comer%C3%A7.pdf">17</a>]. Els barris es classifiquen segons el grau de desertificació comercial identificada en un informe de <a href="https://www.pateco.org/proyectos/estudio-sobre-los-locales-inactivos-a-pie-de-calle-en-la-ciudad-de-valencia/">PATECO</a>:</p>
+
+<ul>
+<li><p><strong>Desertització comercial greu</strong>: Benicalap, Ciutat Fallera, El Botànic, El Pilar, La Roqueta, Marxalenes, Nou Moles, Russafa, Soternes, Tormos i Torrefiel.</p></li>
+
+<li><p><strong>Presenten símptomes de desertització comercial</strong>: Aiora, Arrancapins, Beteró, El Calvari, El Carme, Els Orriols, En Corts, La Creu Coberta, La Petxina, La Seu, La Xerea, Mont-Olivet i Morvedre.</p></li>
+</ul>
+
+<p>L&rsquo;ajuntament disposa d&rsquo;altres ajudes per complementar aquesta subvenció, però de manera paral·lela també impulsa noves actuacions urbanístiques que van en una direcció completament oposada. Parlem, per exemple, de la creació del <em>barri</em> de Turianova i la construcció d&rsquo;un nou centre comercial <em>next gen</em>, autoritzat per la Generalitat en 2021, amb 113.000m<sup>2</sup>. Aquest nou centre comercial, que comptarà amb cinema, bolera i piscina, dedicarà la major part de la seua superfície a tendes, restaurants i l&rsquo;entreteniment però no deixa de banda els usos hotelers, dedicant 23.000m<sup>2</sup> a la construcció d&rsquo;un nou hotel i d&rsquo;un complex de <strong>100 apartaments turístics</strong> [<a href="https://valenciaplaza.com/turianova-complejo-ocio-multiespacio-terciario-hotel-apartamento-turisticos">18</a>]. La combinació perfecta d&rsquo;especulació, turistificació i destrucció del comerç de proximitat.</p>
+
+<h2 id="el-cas-del-barri-d-aiora">El cas del barri d&rsquo;Aiora</h2>
+
+<p>Per estudiar aquesta problemàtica, explorem el barri d&rsquo;Aiora, registrant tots els baixos comercials transformats i <a href="/visor_baixos/index.html">creant un visor web</a> on poder publicar la informació obtinguda. El visor complementa aquest article de manera que la ciutadania pot comprovar autònomament la ràpida expansió d&rsquo;aquests nous apartaments de manera interactiva. A més, gràcies a la ferramenta Google StreetView i a la capacitat que aquesta oferix de consultar imatges actuals i passades, podem fer un estudi profund de com han anat canviant els usos i les configuracions d&rsquo;eixos espais que ara són habitatges turístics.</p>
+
+<p><a href="/visor_baixos/index.html">
+
+  <figure class="center" >
+    <img src="/img/baixos/visor.png"   style="border-radius: 8px;"  />
+    
+      <figcaption class="right" >Captura de pantalla del visor.</figcaption>
+    
+  </figure>
+
+
+</a></p>
+
+<h3 id="contextualització-del-barri">Contextualització del barri</h3>
+
+<p>Ubicat al districte de Camins al Grau, a l’est de la ciutat, trobem el barri d’Aiora. Limitat administrativament pel Carrer Sants Just i Pastor al nord i per les avingudes de la Serradora, del Port i de Manuel Candela a l’est, sud i oest respectivament. Aquests límits, establits seguint la xarxa viària, son porosos al nord i oest, mentre que són més rígids a l’est i sud, degut principalment a l’ampliària dels carrers, el volum de vehicles motoritzats que en circulen i les diferències en el teixit urbà.</p>
+
+<h4 id="demografia">Demografia</h4>
+
+<div id="map1">
+    <div class="mapContainer">
+        <svg></svg>
+    </div>
+    <div class="overlay">
+        <h4 style="margin: 0;">Aiora:</h4>
+        <span class="stat">#4 barri més poblat</span>
+    </div>
+    <div class="map_buttons">
+        <button class="active" data-col="població">Població</button>
+        <button data-col="densitat">Densitat de població</button>
+        <button data-col="envelliment">Envelliment</button>
+        <button data-col="superficie habitatges">Superfície mitjana dels habitatges</button>
+        <button data-col="renda mitjana">Renda mitjana</button>
+    </div>
+</div>
+
+<p>Es tracta d’un barri humil, de tradició migrant, que perd població de manera sostinguda des de 2012, mentre que la que resta es va envellint progressivament [<a href="https://www.valencia.es/estadistica/inf_dtba/2023/Districte_12_Barri_1.pdf">19</a>]. Amb 24.553 veïnes en 2022, el barri ha perdut 1.100 en els últims 10 anys, 344 sols l’any passat. L’edat mitjana del barri supera els 44 anys i l&rsquo;índex d’envelliment (quantitat de persones de més de 65 anys per cada 100 menors de 16 anys), s’ubica en 153,8, xifra més elevada que  la mitjana estatal [<a href="https://www.ine.es/jaxiT3/Tabla.htm?t=1418&amp;L=0">20</a>] però encara lluny d’alguns extrems que podem trobar en altres barris de la ciutat.</p>
+
+<p>El 46% de les veïnes han nascut fora de la ciutat, podem distribuir-les en dos grans grups: per una banda, aquelles persones que es desplaçaren del camp a la ciutat durant la mitjania del segle passat, i per altra banda les persones de tercers països que s’instal·laren al barri a partir de l’inici de l&rsquo;actual segle [<a href="https://www.ine.es/jaxi/Tabla.htm?path=/t20/e245/p08/l0/&amp;file=03005.px&amp;L=0">21</a>], destacant especialment les comunitats llatinoamericanes i asiàtiques.</p>
+
+<h4 id="urbanisme">Urbanisme</h4>
+
+<div id="map2">
+    <div><h3 id="num">75.6</h3>% dels edificis actuals construits abans de <span>1975</span></div>
+    <svg></svg>
+    <div id="slider_container">
+        <h3>1900</h3>
+        <input id="year_slider" type="range" min="1900" max="2023" value="1975" autocomplete="off">
+        <h3>2023</h3>
+    </div>
+</div>
+
+<p>El ràpid desenvolupament del barri ve marcat en gran manera, com en tants altres indrets del país, per la necessitat d’oferir habitatges  assequibles  de manera ràpida a les persones que van deixar el camp en les dècades posteriors a la guerra. En un espai completament agrari, on l’horta  s’estenia immensa, van començar a establir-se els eixos viaris actuals i a construir-se els primers blocs d’habitatges. Aquest procés urbanitzador es va condensar principalment en el període 1955-1975, on en 20 anys es va construir el 50% dels edificis actuals.</p>
+
+<p>En les últimes dècades podem destacar dues actuacions urbanístiques significatives:</p>
+
+<ul>
+<li>La finalització del PAI de l’actual carrer Guillem d’Anglesola va suposar l’enderrocament de 60 cases de dues altures en un procés que es va allargar més de 20 anys pels endarreriments de l’agent urbanitzador. Aquest endarreriment va suposar l’abandó de molts veïns de les seues cases, quedant en situació ruïnosa durant anys [<a href="https://www.levante-emv.com/comunitat-valenciana/2011/06/24/ayuntamiento-valencia-derribara-veintena-casas-13053721.html">22</a>, <a href="https://www.lasprovincias.es/v/20110714/valencia/comienzan-derribar-casas-ruinas-20110714.html">23</a>]. L’enderrocament d’aquest grup de cases tan singulars dins d’un barri ja aleshores dominat pels blocs d’habitatges actuals es va justificar per al necessitat de connectar el barri amb l’avinguda del Port, la qual cosa s’ha dut a terme amb la construcció d’un carrer exageradament ample de 50 metres.</li>
+<li>La destrucció dels últims espais d’horta al barri per construir l’estació de metro d’Aiora.</li>
+</ul>
+
+<h4 id="activitats-econòmiques">Activitats econòmiques</h4>
+
+<p><img src="/img/baixos/comerç_barri.png" alt="" srcset="">
+En sintonia amb lo exposat anteriorment, trobem que al barri les activitats econòmiques classificades com &ldquo;Comerç, Restaurants i Hostaleria, Reparacions&rdquo; (al gràfic anterior simplement com &ldquo;Comerç&rdquo;) patixen un clar retrocés des que es tenen registres. Tant de bo que l&rsquo;Oficina Estadística de l&rsquo;Ajuntament separara les activitats amb major granularitat i diferenciara les activitats comercials minoristes dels restaurants i bars, per poder estudiar com es comporten tots dos de manera independent.</p>
+
+<h3 id="resultats-una-cartografia-incompleta">Resultats: una cartografia incompleta</h3>
+
+<p>En el moment de publicar aquest article s&rsquo;han registrat <strong>67 baixos transformats</strong> en un total de <strong>126 habitatges turístics</strong>, d&rsquo;aquests, <strong>32 no estan registrats</strong> i per tant son il·legals. Almenys altres <strong>58 estan en construcció</strong>. Les ubicacions exactes les podem trobar al <a href="/visor_baixos/index.html">visor</a>, a forma de cartografia incompleta de la transformació que està vivint el barri d’Aiora. I és important recordar que és incompleta perquè aquest procés està sent ràpid i difícilment abastable, una vegada creus haver registrat tots els nous apartaments, t&rsquo;adones que han sorgit de nous.</p>
+
+
+  <figure class="center" >
+    <img src="/img/baixos/baix2.JPG"   style="border-radius: 8px;"  />
+    
+  </figure>
+
+
+
+<p>La varietat de comerços substituïts per apartaments turístics va des de fruiteries i tendes de sabates fins a oficines i tallers d&rsquo;automòbils, passant per un local parroquial. És habitual trobar els nous apartaments agrupats, ja que, o bé un sol baix és prou gran per a ser transformat en múltiples apartaments o els inversors han adquirit dos o més baixos continus, cosa que facilita tant el procés de transformació inicial, en agilitzar els tràmits administratius i les obres de reforma, com posteriorment l&rsquo;explotació  i gestió habitual d&rsquo;aquests.</p>
+
+<p>La transformació incontrolada de baixos en apartaments turístics està reconfigurant el paisatge urbà del barri de manera molt ràpida. Si bé en Aiora hi ha molts altres apartaments, un total de 381 aproximadament [<a href="http://insideairbnb.com/valencia">24</a>], aquests s&rsquo;ubiquen a l&rsquo;interior dels edificis. Ara, en situar els nous apartaments en locals a peu de carrer, s&rsquo;ha de transformar de manera considerable els baixos per adequar-los a la normativa i complir amb els requisits d&rsquo;habitabilitat, canviant portes i afegint finestres i tanques, amb el consegüent canvi en la fisonomia del mateix carrer.</p>
+
+<p>De les transformacions que hem trobat al barri destaquen algunes que paga la pena destacar:</p>
+
+<ul>
+<li>La transformació d&rsquo;un local de 1.600m<sup>2</sup> antigament ocupat per un supermercat al número 38 del carrer Berenguer Mallol. Donat la grandària d&rsquo;aquest immoble podem assumir que es convertirà en almenys 15 apartaments.</li>
+<li>Les noves promocions ubicades al carrer de Guillem d&rsquo;Anglesola en les que els baixos, inicialment destinats a ús comercial, han sigut directament transformats en apartaments turístics: en la primera promoció trobem 4 apartaments més una pensió de 5 habitacions i en la segona 2 apartaments més un altre en construcció.</li>
+<li>Al carrer de la Conserva trobem un edifici de 4 plantes (més un entre-sol) de nova construcció dedicat exclusivament a 6 apartaments turístics i la rehabilitació completa d&rsquo;un edifici de dues plantes, transformat en un apartament amb sis habitacions i piscina.</li>
+</ul>
+
+<p>Si bé aquests dos últims casos que trobem al carrer de la Conserva no s&rsquo;adherixen al fenomen de substitució d&rsquo;un baix comercial per un apartament turístic, hem decidit incloure&rsquo;ls en l&rsquo;article per l&rsquo;impacte i la significativitat que tenen. Aquests establiments hotelers s&rsquo;ubiquen en un carrer on encara es conserven cases baixes, moltes d&rsquo;elles en estat d&rsquo;abandó. A més, si consultem les dades de renda mitjana per capita, trobem que a aquesta secció censal es situa als 11.170€, dins del percentil 73 més pobre de la ciutat (el 73% de totes les seccions censals tenen una renda mitjana per persona major que aquesta) [<a href="https://estadisticavlc.shinyapps.io/Indicadores_Renta/">25</a>].</p>
+
+<p>El procés de transformació està sent ràpid, sobtat i estés per tot el barri, especialment en la franja entre el carrer Ramiro de Maeztu-Jeroni de Montsoriu i l&rsquo;avinguda del Port. La reforma dels baixos s&rsquo;efectua de manera ràpida, emprant tècniques constructives que permeten adequar l&rsquo;espai interior mitjançant l&rsquo;ús de pladur i paviments laminats o vinílics, de molt fàcil i ràpida instal·lació. L&rsquo;interior dels apartaments s&rsquo;ompli sobre manera utilitzant mobles d&rsquo;Ikea, cosa que podem comprovar als anuncis publicats en Airbnb o Booking. Per simplificar l&rsquo;eixida de fums, les cuines s&rsquo;ubiquen annexes a l&rsquo;entrada o molt proper d&rsquo;alguna finestra ja existent. Aquestes a més solen anar equipades amb plaques elèctriques i no de gas, de forma que s&rsquo;evita la instal·lació de la infraestructura necessària per al gas. Quan l&rsquo;altura de l&rsquo;immoble ho permet, es construïxen entre-sols que permeten maximitzar l&rsquo;ús de l&rsquo;espai, col·locant els llits en aquest nou espai, i permetent la subdivisió del local en més apartaments.</p>
+
+
+  <figure class="center" >
+    <img src="/img/baixos/baix3.JPG"   style="border-radius: 8px;"  />
+    
+  </figure>
+
+
+
+<p>Donat que els apartaments estan a peu de carrer, les seues finestres solen ser translúcides i van acompanyades de reixes. En aquelles on l&rsquo;espai ho permet, les reixes s&rsquo;ubiquen al nivell de la façana de l&rsquo;edifici mentre que la porta i finestra de l&rsquo;apartament es mou cap a l&rsquo;interior del local, habilitant eixe xicotet espai a manera de terrassa. Aquesta ubicació al nivell del carrer pot revertir en aspectes negatius que identifiquem en algunes ressenyes dels apartaments: soroll de l&rsquo;exterior, locals annexos, veïns o fins i tot de les canonades de l&rsquo;edifici, així com brutícia, falta de privacitat o presència de panderoles.</p>
+
+<h2 id="conclusions">Conclusions</h2>
+
+<p>La transformació de locals comercials comporta impactes molt significatius per als barris en dos eixos molt correlacionats:</p>
+
+<ul>
+<li>Primerament, i de manera evident, augmenta la turistificació dels barris. Permetent la conversió dels baixos dels edificis en apartaments turístics augmenta de manera molt considerable el parc dels immobles disponibles per implantar aquest tipus de negocis i, per tant, el volum de turistes que rebrà el barri.</li>
+<li>Segonament, aquest augment de la pressió turística no es produïx mitjançant el reemplaçament directe d’habitatges de residents per a turistes, com havíem vist fins ara, sinó que s’assolix mitjançant l’eliminació del teixit comercial de proximitat que nodrix i estructura de manera fonamental els barris. Front al rendible negoci turístic, les formes clàssiques de negoci de proximitat poc o res poden fer. Els propietaris dels locals, en lloc de continuar mantenint eixe espai en règim d’arrendament, optaran per la conversió i explotació turística o la seua venda a empreses especialitzades del sector, ja que els beneficis que poden obtindre són considerablement majors.</li>
+</ul>
+
+<p>Aquestes dues direccions estan correlacionades en tant que el creixent volum de turistes que rebran els barris no consumixen de la mateixa manera, i en les mateixes condicions, que els veïns. S’enceta així un doble procés: la destrucció directa del teixit comercial mitjançant la reconversió dels locals i la substitució per altres comerços i negocis adaptats a les necessitats, desitjos i capacitats dels turistes, com per exemple bars i restaurants singulars i moderns o més supermercats, petits i grans, que obriran diumenges i festius inclosos.</p>
+
+<p>A mitjà i llarg termini el procés de revalorització del barri afectarà al preu del sol, dels habitatges i dels locals. Encarira el lloguer, el teixit comercial tradicional es transformarà i es culminarà el procés amb el desplaçament de les veïnes, com ja hem pogut viure en tants altres barris i ciutats d’arreu del món, en un procés ja molt conegut, denominat gentrificació. La decisió de permetre la conversió de locals comercials en apartaments turístics ha suposat l&rsquo;acceleró definitiu al procés de turistificació de la ciutat, a l&rsquo;expulsió de les veïnes i a la transformació ràpida i descontrolada d&rsquo;espais i modes de vida en favor dels beneficis d&rsquo;uns pocs.</p>
+
+  </div>
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span class="pagination__title-h">Llegir altres articles</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      
+      <span class="button next">
+        <a href="/cat/posts/fixing_blocks/fixing_blocks/">
+          <span class="button__text">Corregint dades: illes cadastrals de València</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+  
+
+  
+
+</div>
+
+    </div>
+
+    
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <a href="/" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367"/>
+</svg>
+</span>
+    <span class="logo__text">Francesc H.</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+      <div class="copyright">
+        <span>© 2023 Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span>
+        <span>Theme created by <a href="https://twitter.com/panr" target="_blank" rel="noopener">panr</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+    
+  </div>
+
+  
+
+  
+  
+  <script src="/posts/baixos/app.js"></script>
+  
+  
+</body>
+
+</html>

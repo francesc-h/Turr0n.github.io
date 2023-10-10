@@ -3,23 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/cat/posts/fixing_blocks/fixing_blocks/</loc>
-    <lastmod>2020-05-06T16:54:12+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="/es/posts/fixing_blocks/fixing_blocks/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="cat"
-                href="/cat/posts/fixing_blocks/fixing_blocks/"
-                />
+    <loc>/cat/posts/baixos/baixos/</loc>
+    <lastmod>2023-08-02T11:14:00+02:00</lastmod>
   </url>
   
   <url>
     <loc>/cat/</loc>
-    <lastmod>2020-05-06T16:54:12+02:00</lastmod>
+    <lastmod>2023-08-02T11:14:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -39,7 +29,7 @@
   
   <url>
     <loc>/cat/posts/</loc>
-    <lastmod>2020-05-06T16:54:12+02:00</lastmod>
+    <lastmod>2023-08-02T11:14:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -49,6 +39,21 @@
                 rel="alternate"
                 hreflang="cat"
                 href="/cat/posts/"
+                />
+  </url>
+  
+  <url>
+    <loc>/cat/posts/fixing_blocks/fixing_blocks/</loc>
+    <lastmod>2020-05-06T16:54:12+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/posts/fixing_blocks/fixing_blocks/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cat"
+                href="/cat/posts/fixing_blocks/fixing_blocks/"
                 />
   </url>
   
