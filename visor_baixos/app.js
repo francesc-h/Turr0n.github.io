@@ -1,12 +1,7 @@
 const mobile = document.documentElement.clientWidth  < 1100;
-const marker_size = {
-    regular: (mobile) ? 6 : 8,
-    not_clicked: (mobile) ? 4 : 6,
-    clicked: 12,
-    hovered: (mobile) ? 8 : 10
-}
 
 let shown_apart;
+let scaling_factor = (mobile) ? 350 : 200;
 
 const map = L.map('map').setView([39.466, -0.344052314758300849], 16);
 const map_element = map.getContainer();
@@ -15,7 +10,9 @@ const map_element = map.getContainer();
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '© OpenStreetMap',
-    zoomControl: false
+    zoomControl: false,
+    zoomSnap: 0,
+    zoomDelta: 0.25
 }).addTo(map);
 
 map.zoomControl.setPosition("bottomright")
@@ -44,7 +41,7 @@ function toggle_overlay() {
         shown_apart = undefined;
 
         apart_layer.setStyle({
-            radius: marker_size.regular,
+            //radius: marker_size.regular,
             fillOpacity: 0.8,
             //fillColor: "#3388ff"
         });
@@ -63,15 +60,13 @@ function toggle_overlay() {
 
 function show_apart(e) {
     apart_layer.setStyle({
-        radius: marker_size.not_clicked,
-        fillOpacity: 0.6,
+        fillOpacity: 0.4,
     });
     
     const marker = e.target
     const feature = marker.feature;
     
     marker.setStyle({
-        radius: marker_size.clicked,
         fillOpacity: 1,
         //fillColor: "#c3e3ff"
     });
@@ -151,10 +146,53 @@ async function load_aparts() {
     }
 
     const data = await fetch("./ubicacions_2.geojson").then(res => res.json());
+    const barri = await fetch("./aiora.geojson").then(res => res.json());
+    L.geoJSON(barri, {
+        fillOpacity: 0.1,
+        weight: (mobile) ? 2 : 6
+    }).addTo(map)
+
+
+    data.features = data.features.sort((f1, f2) => Number(f2.properties["Num aparts"]) - Number(f1.properties["Num aparts"]));
+    
+    let meanLat = 0, uniqueNumAparts = [];
+    data.features.forEach((f) => {
+        meanLat += f.geometry.coordinates[1];
+
+        if (!uniqueNumAparts.includes(f.properties["Num aparts"])) {
+            uniqueNumAparts.push(f.properties["Num aparts"])
+        }
+    })
+
+    meanLat = meanLat / data.features.length;
+    console.log(meanLat, uniqueNumAparts);
+
+
+    function metersPerPixel(latitude, zoomLevel) {
+        var earthCircumference = 40075017;
+        var latitudeRadians = latitude * (Math.PI/180);
+        return earthCircumference * Math.cos(latitudeRadians) / Math.pow(2, zoomLevel + 8);
+    };
+
+    const apartNumToRadius = {}
+    uniqueNumAparts.forEach(num => {
+        const radius = Math.sqrt((scaling_factor*num) / Math.PI);
+        let tmp = radius / metersPerPixel(meanLat, map.getZoom())
+
+        apartNumToRadius[num] = tmp;
+    })
+
+    console.log(apartNumToRadius)
+    console.log(data.features)
+
+    
+
     apart_layer = L.geoJSON(data, {
         pointToLayer: (feature, latlng) => {
+            
+            const r = apartNumToRadius[feature.properties["Num aparts"]] * (mobile) ? 1.5 : 1
             return new L.CircleMarker(latlng, {
-                radius: marker_size.regular,
+                radius: r, 
                 fillOpacity: 0.8,
                 fillColor: point_color(feature),
                 color: "black",
@@ -170,8 +208,7 @@ async function load_aparts() {
                     }
 
                     e.target.setStyle({
-                        radius: marker_size.hovered,
-                        fillOpacity: 1
+                        fillOpacity: (shown_apart) ? 0.8 : 0.6
                     })
                 },
                 mouseout: function(e) {
@@ -180,14 +217,30 @@ async function load_aparts() {
                     }
 
                     e.target.setStyle({
-                        radius: (shown_apart) ? marker_size.not_clicked : marker_size.regular,
-                        fillOpacity: 0.8
+                        fillOpacity: (shown_apart) ? 0.6 : 0.8
                     })
                 }
             })
         }
     }).addTo(map)
 
+    map.on("zoomend", () => {
+        console.log(apart_layer)
+        
+        uniqueNumAparts.forEach(num => {
+            const radius = Math.sqrt((scaling_factor*num) / Math.PI);
+            let tmp = radius / metersPerPixel(meanLat, map.getZoom())
+    
+            apartNumToRadius[num] = tmp;
+        })
+        
+        apart_layer.eachLayer(marker => {
+            const f = marker.feature;
+
+            marker.setRadius( apartNumToRadius[ f.properties["Num aparts"] ] )
+        })
+    })
+    
     map.fitBounds(
         apart_layer.getBounds()
     )

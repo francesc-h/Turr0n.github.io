@@ -124,7 +124,13 @@ class MAP {
             .attr('d', this.path)
             .attr('vector-effect', 'non-scaling-stroke')
             .attr("stroke", "black")
-            .attr("stroke-width", 0.5)
+            .attr("stroke-width", (d) => {
+                if (d.properties.nombre === "AIORA") {
+                    return 1.5
+                } else {
+                    return 0.5
+                }
+            })
             .style("fill", (d) => {
                 return this.colorScale(
                     this.mappingFunc(
