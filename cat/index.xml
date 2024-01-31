@@ -6,10 +6,20 @@
     <description>Recent content on Francesc H.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Aug 2023 11:14:00 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 31 Jan 2024 12:25:17 +0100</lastBuildDate>
     
 	<atom:link href="/cat/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Publicació automatitzada d&#39;edictes d&#39;informació pública de l&#39;Ajuntament de València</title>
+      <link>/cat/posts/edictes/edictes/</link>
+      <pubDate>Wed, 31 Jan 2024 12:25:17 +0100</pubDate>
+      
+      <guid>/cat/posts/edictes/edictes/</guid>
+      <description>L&amp;rsquo;accés efectiu a la informació pública de les administracions és fonamental per a una participació ciutadana útil i transformadora. Mitjançant la nova ferramenta que he desenvolupat es publiquen automatitzadament els edictes d&amp;rsquo;informació pública de l&amp;rsquo;Ajuntament de València en aquest compte de Twitter.
+L&amp;rsquo;objectiu d&amp;rsquo;aquesta ferramenta és facilitar a la ciutadania l&amp;rsquo;accés a aquests documents, ja que, fins ara, resulta tediós i poc àgil haver d&amp;rsquo;estar consultant diàriament el web de l&amp;rsquo;Ajuntament per mantindre&amp;rsquo;s al dia de nous projectes.</description>
+    </item>
     
     <item>
       <title>Baixos: la nova frontera del turisme</title>
