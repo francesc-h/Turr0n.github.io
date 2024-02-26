@@ -4,7 +4,7 @@
   
   <url>
     <loc>/cat/</loc>
-    <lastmod>2024-01-31T12:25:17+01:00</lastmod>
+    <lastmod>2024-02-24T16:51:17+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -23,8 +23,13 @@
   </url>
   
   <url>
+    <loc>/cat/posts/aquesta_setmana/</loc>
+    <lastmod>2024-02-24T16:51:17+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/cat/posts/</loc>
-    <lastmod>2024-01-31T12:25:17+01:00</lastmod>
+    <lastmod>2024-02-24T16:51:17+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
